@@ -1,15 +1,15 @@
 @import "./normalize/normalize.css";
-@import "./components/_typography.css";
+@import "./components/typography.css";
 
-@import "./components/_header.css";
-@import "./components/_footer.css";
+@import "./components/header.css";
+@import "./components/footer.css";
 
-@import "./components/_objects.css";
-@import "./components/_elements.css";
-@import "./components/_buttons.css";
+@import "./components/objects.css";
+@import "./components/elements.css";
+@import "./components/buttons.css";
 
-@import "./components/_colors.css";
-@import "./components/_font.css";
+@import "./components/colors.css";
+@import "./components/font.css";
 
 .d-flex {
   display: flex;
