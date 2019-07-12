@@ -1,0 +1,32 @@
+@import "./normalize/normalize.css";
+@import "./components/_typography.css";
+
+@import "./components/_header.css";
+@import "./components/_footer.css";
+
+@import "./components/_objects.css";
+@import "./components/_elements.css";
+@import "./components/_buttons.css";
+
+@import "./components/_colors.css";
+@import "./components/_font.css";
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex--center {
+  display: flex;
+  justify-content: center;
+}
+.d-flex--sp-btw {
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex--column {
+  display: flex;
+  flex-direction: column;
+}
+.padding-none {
+  padding: 0;
+}

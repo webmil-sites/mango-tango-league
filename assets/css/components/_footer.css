@@ -1,0 +1,70 @@
+.footer {
+  min-height: 250px;
+  background-color: #272038;
+}
+.social-icon {
+  height: 45px;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+.social-icon:last-of-type {
+  margin-right: 0;
+}
+.social-icon:after {
+  content: "";
+  top: 0;
+  position: absolute;
+  background: url("../../images/social_sprite.svg") no-repeat center center;
+}
+.social-icon.union {
+  width: 40px;
+  /* height: 45px; */
+  position: relative;
+}
+.social-icon.union:after {
+  width: 40px;
+  height: 45px;
+  left: 0;
+  background-position-x: 0px;
+}
+.social-icon.vk {
+  width: 40px;
+}
+.social-icon.vk:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -75px;
+}
+.social-icon.twitch {
+  width: 44px;
+}
+.social-icon.twitch:after {
+  width: 44px;
+  height: 45px;
+  background-position-x: -155px;
+}
+.social-icon.twitter {
+  width: 40px;
+}
+.social-icon.twitter:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -225px;
+}
+.social-icon.instagram {
+  width: 40px;
+}
+.social-icon.instagram:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -290px;
+}
+.social-icon.youtube {
+  width: 58px;
+}
+.social-icon.youtube:after {
+  width: 58px;
+  height: 45px;
+  background-position-x: -355px;
+}

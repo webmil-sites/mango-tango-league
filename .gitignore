@@ -1,2 +1,8 @@
+dist
+.cache
+.DS_Store
+node_modules/
+package-lock.json
+package.json
 # Google App Engine generated folder
 appengine-generated/

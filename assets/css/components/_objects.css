@@ -1,0 +1,21 @@
+.o-page-container {
+  width: 100%;
+  height: 100%;
+  background: url("../../images/bg_full.jpg") no-repeat center center;
+  background-size: cover;
+}
+.o-container {
+  max-width: 1772px;
+  margin: auto;
+}
+
+.o-container--section-one {
+  max-width: 1345px;
+  margin: auto;
+  padding: 65px 25px 145px 25px;
+}
+.o-container--footer {
+  max-width: 1580px;
+  margin: auto;
+  padding: 70px 0 20px 0;
+}
