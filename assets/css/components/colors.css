@@ -4,3 +4,9 @@
 .c-t-footer a {
   color: #8d879c;
 }
+.c-bg-league--yellow {
+  background: linear-gradient(180deg, #f0ff43 0%, #ffd749 100%);
+}
+.c-bg-league--red {
+  background: linear-gradient(180deg, #ec0c4b 0%, #ff4a7d 100%);
+}

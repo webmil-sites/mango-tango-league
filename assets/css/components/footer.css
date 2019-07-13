@@ -5,6 +5,7 @@
 } */
 .footer {
   min-height: 250px;
+  padding: 0 25px;
   background-color: #272038;
 }
 .social-icon {
@@ -20,14 +21,26 @@
   content: "";
   top: 0;
   position: absolute;
-  background: url("../../images/social_sprite.svg") no-repeat center center;
+  background: url("../../images/social.svg") no-repeat center center;
+}
+.social-icon:hover:after {
+  content: "";
+  top: 0;
+  position: absolute;
+  background: url("../../images/social_sprite_hover.svg") no-repeat center
+    center;
 }
 .social-icon.union {
   width: 40px;
-  /* height: 45px; */
   position: relative;
 }
 .social-icon.union:after {
+  width: 40px;
+  height: 45px;
+  left: 0;
+  background-position-x: 0px;
+}
+.social-icon.union:hover:after {
   width: 40px;
   height: 45px;
   left: 0;
@@ -39,7 +52,12 @@
 .social-icon.vk:after {
   width: 40px;
   height: 45px;
-  background-position-x: -75px;
+  background-position-x: -65px;
+}
+.social-icon.vk:hover:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -65px;
 }
 .social-icon.twitch {
   width: 44px;
@@ -47,7 +65,12 @@
 .social-icon.twitch:after {
   width: 44px;
   height: 45px;
-  background-position-x: -155px;
+  background-position-x: -130px;
+}
+.social-icon.twitch:hover:after {
+  width: 44px;
+  height: 45px;
+  background-position-x: -130px;
 }
 .social-icon.twitter {
   width: 40px;
@@ -55,7 +78,12 @@
 .social-icon.twitter:after {
   width: 40px;
   height: 45px;
-  background-position-x: -225px;
+  background-position-x: -198px;
+}
+.social-icon.twitter:hover:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -198px;
 }
 .social-icon.instagram {
   width: 40px;
@@ -63,7 +91,12 @@
 .social-icon.instagram:after {
   width: 40px;
   height: 45px;
-  background-position-x: -290px;
+  background-position-x: -263px;
+}
+.social-icon.instagram:hover:after {
+  width: 40px;
+  height: 45px;
+  background-position-x: -263px;
 }
 .social-icon.youtube {
   width: 58px;
@@ -71,5 +104,10 @@
 .social-icon.youtube:after {
   width: 58px;
   height: 45px;
-  background-position-x: -355px;
+  background-position-x: -328px;
+}
+.social-icon.youtube:hover:after {
+  width: 58px;
+  height: 45px;
+  background-position-x: -328px;
 }
