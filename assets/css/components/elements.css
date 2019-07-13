@@ -12,79 +12,11 @@
 .e-block-social-sprite {
   max-width: 420px;
 }
-.e-nav-footer .item,
-.e-nav-footer-faq .item {
+.e-nav-footer.item,
+.e-nav-footer-faq.item {
   margin-right: 20px;
 }
-.e-nav-footer .item:last-of-type,
+.e-nav-footer .item,
 .e-nav-footer-faq .item:last-of-type {
   margin-right: 0;
-}
-.e-block--league {
-  width: 610px;
-  height: 482px;
-  margin-right: 24px;
-  position: relative;
-  background-color: #130b42;
-  background-image: url("../../images/bg_league.svg");
-  background-repeat: no-repeat;
-  background-position: 265px 30px;
-  transition: all 1s;
-}
-.e-block--league:last-of-type {
-  margin-right: 0;
-}
-.e-block--league:hover {
-  box-shadow: 0px 4px 200px rgba(255, 0, 107, 0.48);
-}
-
-.e-block--league.nonpro:after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 460px;
-  bottom: 0;
-  right: 0;
-  background: url("../../images/dkmodel.png") no-repeat right center;
-}
-.e-block--league.solo:after {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 460px;
-  bottom: 0;
-  right: 0;
-  background: url("../../images/bristleback.png") no-repeat right bottom;
-}
-.e-block--league .logo {
-  width: 90px;
-  height: 140px;
-  margin: 20px 40px;
-}
-
-.e-block--league.nonpro .logo {
-  background: url("../../images/logo_nonpro.svg") no-repeat center center;
-}
-.e-block--league.solo .logo {
-  background: url("../../images/logo_solo.svg") no-repeat center center;
-}
-
-.e-block--league .t-title-h3 {
-  padding: 26px 40px 22px 40px;
-  font-weight: 700;
-  font-family: "Akrobat-Bold", sans-serif;
-  margin: 20px 0;
-}
-.e-block--league .t-list {
-  padding-left: 22px;
-}
-.e-block--league .button-action,
-.e-block--league .t-list {
-  margin-left: 40px;
-}
-.e-block--league .button-action {
-  position: relative;
-  z-index: 10;
-  color: #a1b6ff;
-  border: 2px solid #a1b6ff;
 }
