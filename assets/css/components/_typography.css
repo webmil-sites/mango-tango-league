@@ -17,10 +17,19 @@ a {
   letter-spacing: 0.02em;
   color: #a1b6ff;
 }
+.t-title-h3 {
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
 .t-event-prize {
   color: #f0ff43;
   font-size: 48px;
   margin-bottom: 0;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+}
+.t-list {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
 }

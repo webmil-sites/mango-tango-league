@@ -9,6 +9,18 @@
   /* woff Pretty Modern Browsers */
   /* ttf Safari, Android, iOS */
 }
+@font-face {
+  font-family: "Akrobat-Bold";
+  src: url("../fonts/Akrobat/WEB/Akrobat-Bold.eot");
+  src: url("../fonts/Akrobat/WEB/Akrobat-Bold.woff2") format("woff2"),
+    url("../fonts/Akrobat/WEB/Akrobat-Bold.woff") format("woff"),
+    url("../fonts/Akrobat/TTF/Akrobat-Bold.ttf") format("truetype");
+  /* eot IE9 Compat Modes */
+  /* woff2 Super Modern Browsers */
+  /* woff Pretty Modern Browsers */
+  /* ttf Safari, Android, iOS */
+}
+
 body {
-  font-family: "Akrobat";
+  font-family: "Akrobat", sans-serif;
 }

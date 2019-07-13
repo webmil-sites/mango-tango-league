@@ -1,19 +1,22 @@
+a {
+  box-sizing: border-box;
+}
 .button-action {
   align-self: center;
-  /* height: 40px; */
-  line-height: 36px;
-  padding: 0 26px;
+  height: 40px;
+  display: inline-block;
+  padding: 8px 26px;
   font-size: 18px;
   color: #ec0c4b;
   border: 2px solid #ec0c4b;
   box-shadow: 0px 0px 40px rgba(255, 36, 102, 0.49);
-  transition: background-color 1000ms;
+  transition: background 23s ease;
 }
 .button-action:hover {
   color: #fff;
-  line-height: 38px;
+  height: 40px;
   border: none;
-  padding: 1px 28px;
+  padding: 10px 28px;
   background: linear-gradient(90deg, #ffafaf -67.05%, #cd003a 100%);
   box-shadow: 0px 0px 60px rgba(255, 36, 102, 0.49);
 }
