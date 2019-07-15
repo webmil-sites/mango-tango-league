@@ -128,10 +128,10 @@
   background: url("../../images/icon_ammo.svg") no-repeat center center;
 }
 .e-block--shcedule .icon-heads:after {
-  top: -55px;
+  top: -60px;
   left: 60px;
   width: 155px;
-  height: 35px;
+  height: 36px;
   background: url("../../images/icon_heads.svg") no-repeat center center;
 }
 .e-block--shcedule .icon-swords:after {
