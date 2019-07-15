@@ -64,18 +64,14 @@
   height: 140px;
   margin: 20px 40px;
 }
-
-.e-block--league.nonpro .logo {
+.nonpro .logo {
   background: url("../../images/logo_nonpro.svg") no-repeat center center;
 }
-.e-block--league.solo .logo {
+.solo .logo {
   background: url("../../images/logo_solo.svg") no-repeat center center;
 }
-
 .e-block--league .t-title-h3 {
   padding: 26px 40px 22px 40px;
-  font-weight: 700;
-  font-family: "Akrobat-Bold", sans-serif;
   margin: 20px 0;
 }
 .e-block--league .t-list {
@@ -90,4 +86,128 @@
   z-index: 10;
   color: #a1b6ff;
   border: 2px solid #a1b6ff;
+}
+/* .s-three {
+
+} */
+.s-three .nonpro .logo {
+  width: 125px;
+  height: 193px;
+  margin: auto;
+}
+.s-three .nonpro .t-title-h3 {
+  padding: 26px 40px 22px 40px;
+  margin: 20px 0;
+  font-size: 58px;
+}
+/* .s-three .nonpro {
+} */
+.e-block--shcedule {
+  position: relative;
+  padding-left: 60px;
+}
+.e-block--shcedule,
+.e-block--shcedule p {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+.e-block--shcedule h4 {
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+.e-block--shcedule .icon-item:after {
+  content: "";
+  position: absolute;
+}
+.e-block--shcedule .icon-ammo:after {
+  top: 50px;
+  left: 0;
+  width: 30px;
+  height: 38px;
+  background: url("../../images/icon_ammo.svg") no-repeat center center;
+}
+.e-block--shcedule .icon-heads:after {
+  top: -55px;
+  left: 60px;
+  width: 155px;
+  height: 35px;
+  background: url("../../images/icon_heads.svg") no-repeat center center;
+}
+.e-block--shcedule .icon-swords:after {
+  width: 34px;
+  height: 30px;
+  background: url("../../images/icon_swords.svg") no-repeat center center;
+}
+.e-block--shcedule .icon-swords.right-top:after {
+  top: 55px;
+  right: 320px;
+}
+.e-block--shcedule .icon-swords.right:after {
+  top: 170px;
+  right: 320px;
+}
+.e-block--shcedule .icon-swords.left:after {
+  top: 55px;
+  left: 0;
+}
+.e-block--shcedule .o-text-container .icon-lc:after {
+  top: 55px;
+  right: 320px;
+  width: 34px;
+  height: 30px;
+  background: url("../../images/icon_champions_league_lfc_6times.svg") no-repeat
+    center center;
+}
+.e-block--shcedule.left:after {
+  content: "";
+  top: 10px;
+  left: 356px;
+  width: 160px;
+  height: 15px;
+  position: absolute;
+  background: url("../../images/s4_shcedule_line-left.svg") no-repeat center
+    center;
+  z-index: 10;
+}
+/* .e-block--shcedule.right:after {
+  content: "";
+  top: 10px;
+  left: 355px;
+  width: 160px;
+  height: 15px;
+  position: absolute;
+  background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
+    center;
+} */
+.e-block--shcedule.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.e-block--shcedule.right .o-text-container:after {
+  content: "";
+  top: 10px;
+  right: 357px;
+  width: 160px;
+  height: 15px;
+  position: absolute;
+  background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
+    center;
+  z-index: 10;
+}
+
+.e-vertical-line {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 976px;
+  background: linear-gradient(
+    179.98deg,
+    rgba(255, 0, 77, 0) 0%,
+    #ff145b 32.29%,
+    #ff004d 84.58%,
+    rgba(251, 60, 117, 0) 95.16%
+  );
 }

@@ -3,8 +3,8 @@
   height: 100%;
   padding: 0 25px;
   /* background: url("../../images/bg_full.jpg") no-repeat center center; */
-  background: url("../../images/bg_full.jpg") no-repeat center top;
-  background-size: cover;
+  background: url("../../images/bg_full_mini.jpg") no-repeat center top;
+  /* background-size: cover; */
 }
 .o-container {
   max-width: 1772px;
@@ -24,4 +24,14 @@
 }
 .o-container--section.s-two {
   padding-bottom: 250px;
+}
+.o-container--shedule {
+  max-width: 1020px;
+  margin: auto;
+  padding-top: 32px;
+}
+.o-text-container {
+  width: 373px;
+  padding-left: 75px;
+  text-align: left;
 }

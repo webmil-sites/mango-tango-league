@@ -2,7 +2,13 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
+.t-bold {
+  font-weight: 700;
+  font-family: "Akrobat-Bold", sans-serif;
+}
+.t-center {
+  text-align: center;
+}
 .t-title {
   font-size: 58px;
   margin: 0;
@@ -32,4 +38,11 @@ a {
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.02em;
+}
+.t-list-bulletless {
+  padding: 0;
+  list-style-type: none;
+}
+.t-max-width {
+  max-width: 348px;
 }
