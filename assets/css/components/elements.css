@@ -268,7 +268,7 @@
 }
 .icon-prize-3rd {
   top: 130px;
-  right: 20px;
+  right: -30px;
   width: 265px;
   height: 124px;
   z-index: 10;
@@ -282,4 +282,38 @@
   height: 107px;
   z-index: 10;
   background: url("../../images/prize-4th-place.svg") no-repeat center center;
+}
+/* partners */
+.partner-maincast {
+  width: 259px;
+  height: 53px;
+  margin-right: 100px;
+}
+.partner-faceit {
+  width: 253px;
+  height: 57px;
+}
+.partner-maincast,
+.partner-faceit {
+  display: inline-block;
+  position: relative;
+}
+.partner-maincast:after,
+.partner-faceit:after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url("../../images/partners.svg") no-repeat;
+}
+.partner-maincast:after {
+  width: 259px;
+  height: 53px;
+
+  background-position-x: 0;
+}
+.partner-faceit:after {
+  width: 255px;
+  height: 57px;
+  background-position-x: -400px;
 }
