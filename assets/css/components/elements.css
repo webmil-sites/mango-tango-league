@@ -102,6 +102,7 @@
 }
 /* .s-three .nonpro {
 } */
+/* schedule section*/
 .e-block--shcedule {
   position: relative;
   padding-left: 60px;
@@ -116,7 +117,7 @@
   margin-top: 0;
   margin-bottom: 27px;
 }
-.e-block--shcedule .icon-item:after {
+.icon-item:after {
   content: "";
   position: absolute;
 }
@@ -151,6 +152,16 @@
   top: 55px;
   left: 0;
 }
+.icon-lc-xl:after {
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 69px;
+  height: 60px;
+  background: url("../../images/icon_champions_league_lfc_6times.svg") no-repeat
+    center center;
+  background-size: 100%;
+}
 .e-block--shcedule .o-text-container .icon-lc:after {
   top: 55px;
   right: 320px;
@@ -170,16 +181,6 @@
     center;
   z-index: 10;
 }
-/* .e-block--shcedule.right:after {
-  content: "";
-  top: 10px;
-  left: 355px;
-  width: 160px;
-  height: 15px;
-  position: absolute;
-  background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
-    center;
-} */
 .e-block--shcedule.right {
   display: flex;
   flex-direction: column;
@@ -210,4 +211,75 @@
     #ff004d 84.58%,
     rgba(251, 60, 117, 0) 95.16%
   );
+}
+
+/* prize section */
+.e-block--prize {
+  width: 405px;
+  height: 487px;
+  padding: 23px 28px;
+  position: relative;
+}
+.e-block--prize:after {
+  content: "";
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 1px;
+  height: 487px;
+  background: linear-gradient(
+    179.98deg,
+    rgba(255, 0, 77, 0) 0%,
+    #ff145b 32.29%,
+    #ff004d 84.58%,
+    rgba(251, 60, 117, 0) 95.16%
+  );
+}
+.e-block--prize:before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 1px;
+  height: 487px;
+  background: linear-gradient(
+    179.98deg,
+    rgba(255, 0, 77, 0) 0%,
+    #ff145b 32.29%,
+    #ff004d 84.58%,
+    rgba(251, 60, 117, 0) 95.16%
+  );
+}
+.icon-prize-1st {
+  top: 130px;
+  right: 1px;
+  width: 400px;
+  height: 285px;
+  z-index: 1;
+  background: url("../../images/prize-1st-place.svg") no-repeat center center;
+}
+.icon-prize-2nd {
+  top: 130px;
+  right: 20px;
+  width: 265px;
+  height: 275px;
+  z-index: 10;
+  background: url("../../images/prize-2nd-place.svg") no-repeat center center;
+}
+.icon-prize-3rd {
+  top: 130px;
+  right: 20px;
+  width: 265px;
+  height: 124px;
+  z-index: 10;
+  background: url("../../images/prize-3rd-place.svg") no-repeat center center;
+}
+.icon-prize-4th {
+  top: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 265px;
+  height: 107px;
+  z-index: 10;
+  background: url("../../images/prize-4th-place.svg") no-repeat center center;
 }

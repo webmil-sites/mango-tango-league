@@ -1,3 +1,10 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -8,6 +15,9 @@ a {
 }
 .t-center {
   text-align: center;
+}
+.t-uppercase {
+  text-transform: uppercase;
 }
 .t-title {
   font-size: 58px;
@@ -43,6 +53,47 @@ a {
   padding: 0;
   list-style-type: none;
 }
+.e-block--shcedule h4 {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+}
+/* prize */
+.t-bg--prize-txt {
+  position: relative;
+  margin-top: 157px;
+  margin-left: -28px;
+}
+.t-bg--prize-txt:after {
+  content: "";
+  position: absolute;
+  width: 251px;
+  top: 0;
+  left: 1px;
+  height: 60px;
+  z-index: 9;
+  background: url("../../images/prize-1st-plzce-text-bg.svg") no-repeat center
+    center;
+}
+
 .t-max-width {
   max-width: 348px;
+}
+.t-max-width-smoll {
+  max-width: 111px;
+  display: inline-block;
+}
+.t-max-width-mid {
+  max-width: 240px;
+  display: inline-block;
+}
+.z-index-10 {
+  position: relative;
+  z-index: 10;
+}
+.t-bootcamp {
+  padding: 5px 28px;
+}
+.e-block--prize h4 {
+  margin: 20px;
 }

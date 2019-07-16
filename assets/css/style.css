@@ -23,6 +23,10 @@
   display: flex;
   justify-content: space-between;
 }
+.d-flex--sp-arnd {
+  display: flex;
+  justify-content: space-around;
+}
 .d-flex--column {
   display: flex;
   flex-direction: column;
@@ -30,14 +34,26 @@
 .padding-none {
   padding: 0;
 }
+.margin-t--60 {
+  margin-top: -60px;
+}
 .margin-t-80 {
   margin-top: 80px;
 }
 .margin-t-50 {
   margin-top: 50px;
 }
+.margin-t-10 {
+  margin-top: 10px;
+}
 .margin-b-50 {
   margin-bottom: 50px;
+}
+.margin-b-80 {
+  margin-bottom: 50px;
+}
+.margin-tb-88 {
+  margin: 88px 0 60px 0;
 }
 .position-rel {
   position: relative;

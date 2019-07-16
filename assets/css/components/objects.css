@@ -3,8 +3,8 @@
   height: 100%;
   padding: 0 25px;
   /* background: url("../../images/bg_full.jpg") no-repeat center center; */
-  background: url("../../images/bg_full_mini.jpg") no-repeat center top;
-  /* background-size: cover; */
+  background: url("../../images/bg.jpg") no-repeat center top;
+  background-size: cover;
 }
 .o-container {
   max-width: 1772px;
@@ -12,6 +12,10 @@
 }
 .o-container--section {
   max-width: 1345px;
+  margin: auto;
+}
+.o-container--section-prize {
+  max-width: 1252px;
   margin: auto;
 }
 .o-container--section.s-one {

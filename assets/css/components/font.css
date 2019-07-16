@@ -25,3 +25,12 @@ body {
   color: #fff;
   font-family: "Akrobat", sans-serif;
 }
+.f-size-64 {
+  font-size: 64px;
+}
+.f-size-36 {
+  font-size: 36px;
+}
+.f-size-24 {
+  font-size: 24px;
+}
