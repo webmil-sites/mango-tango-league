@@ -268,8 +268,8 @@
 }
 .icon-prize-3rd {
   top: 130px;
-  right: -30px;
-  width: 265px;
+  right: 25px;
+  width: 149px;
   height: 124px;
   z-index: 10;
   background: url("../../images/prize-3rd-place.svg") no-repeat center center;
@@ -309,11 +309,11 @@
 .partner-maincast:after {
   width: 259px;
   height: 53px;
-
   background-position-x: 0;
 }
 .partner-faceit:after {
   width: 255px;
-  height: 57px;
+  height: 56px;
   background-position-x: -400px;
+  background-position-y: -1px;
 }
