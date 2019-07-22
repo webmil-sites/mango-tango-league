@@ -12,7 +12,9 @@
       sizes="16x16 32x32"
       type="images/ico"
     />
-
+    <script>
+      dataLayer = [];
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -36,6 +38,10 @@
         <a
           class="button-action"
           href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
+          onclick="dataLayer.push({
+                'clickCounter': 1,
+                'event': 'button Header',
+                'value':'Принять участие'});"
           >Принять участие
         </a>
       </header>
@@ -46,6 +52,10 @@
           <a
             href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
             class="button-action"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Section One',
+                  'value':'Принять участие'});"
             >Принять участие
           </a>
           <h2 class="t-event-prize t-title-h3">$11 900</h2>
@@ -64,6 +74,10 @@
           <a
             href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
             class="button-action"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Non-pro League',
+                  'value':'Принять участие'});"
             >Принять участие
           </a>
         </div>
@@ -77,6 +91,10 @@
           <a
             href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
             class="button-action"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Solo League',
+                  'value':'Принять участие Solo League'});"
             >Принять участие
           </a>
         </div>
@@ -190,10 +208,21 @@
       >
         <div class="nonpro t-center">
           <h3 class="t-title-h3 color-t-vivid-red">Партнеры лиги</h3>
-          <a href="https://www.maincast.com/" class="partner-maincast"></a>
+          <a
+            href="https://www.maincast.com/"
+            class="partner-maincast"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Partner Maincast',
+                  'value':'Принять участие'});"
+          ></a>
           <a
             href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
             class="partner-faceit"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Partner Faceit',
+                  'value':'Принять участие'});"
           ></a>
         </div>
       </section>
@@ -203,22 +232,45 @@
         <a href="#" class="logo"></a>
         <nav class="e-block-social-sprite">
           <!-- <a href=" " class="social-icon union"></a> -->
-          <a href="https://vk.com/dota2mc" class="social-icon vk"></a>
+          <a
+            href="https://vk.com/dota2mc"
+            class="social-icon vk"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button Partner Faceit',
+                  'value':'social vk'});"
+          ></a>
           <a
             href="https://www.twitch.tv/dota2mc_ru"
             class="social-icon twitch"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button twitch',
+                  'value':'social twitch'});"
           ></a>
           <a
             href="https://twitter.com/dota2mc_ru"
             class="social-icon twitter"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button twitter',
+                  'value':'social twitter'});"
           ></a>
           <a
             href="https://www.instagram.com/dota2mc/"
             class="social-icon instagram"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button instagram',
+                  'value':'social instagram'});"
           ></a>
           <a
             href="https://www.youtube.com/channel/UCOtx_hXAeEUSVctnFLQbiVg"
             class="social-icon youtube"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button youtube',
+                  'value':'social youtube'});"
           ></a>
         </nav>
       </div>
