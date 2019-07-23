@@ -178,6 +178,10 @@
     center center;
   background-size: 100%;
 }
+.icon-lc-xl.yellow:after {
+  background: url("../../images/icon_champions_league_lfc_6times-yellow.svg")
+    no-repeat center center;
+}
 .e-block--shcedule .o-text-container .icon-lc:after {
   top: 55px;
   left: 200px;
