@@ -4,6 +4,7 @@
   background-color: #272038;
 } */
 .footer {
+  min-width: 1400px;
   min-height: 250px;
   padding: 0 25px;
   background-color: #272038;

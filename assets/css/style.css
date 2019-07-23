@@ -31,6 +31,11 @@
   display: flex;
   flex-direction: column;
 }
+.d-flex--column-sp-btw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .padding-none {
   padding: 0;
 }
@@ -42,6 +47,9 @@
 }
 .margin-t-80 {
   margin-top: 80px;
+}
+.margin-t-250 {
+  margin-top: 250px;
 }
 .margin-t-50 {
   margin-top: 50px;
@@ -75,4 +83,7 @@
 }
 .max-height-480 {
   max-height: 480px;
+}
+.height-480 {
+  height: 480px;
 }
