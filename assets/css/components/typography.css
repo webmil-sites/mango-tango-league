@@ -38,6 +38,11 @@ a {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+.t-title-h4 {
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
 .t-event-prize {
   color: #f0ff43;
   font-size: 48px;

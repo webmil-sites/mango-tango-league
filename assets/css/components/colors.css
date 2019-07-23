@@ -10,6 +10,9 @@
 .c-bg-league--red {
   background: linear-gradient(180deg, #ec0c4b 0%, #ff4a7d 100%);
 }
+.c-bg-league--blue {
+  background: linear-gradient(105.74deg, #13b5f0 1.31%, #2e6dd7 79.17%);
+}
 .c-bg-prize--red {
   background: linear-gradient(
     180deg,

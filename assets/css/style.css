@@ -37,6 +37,9 @@
 .margin-t--60 {
   margin-top: -60px;
 }
+.margin-t-360 {
+  margin-top: 360px;
+}
 .margin-t-80 {
   margin-top: 80px;
 }
@@ -63,4 +66,10 @@
 }
 .position-abs {
   position: absolute;
+}
+.column-width-50 {
+  width: 50%;
+}
+.max-height-480 {
+  max-height: 480px;
 }

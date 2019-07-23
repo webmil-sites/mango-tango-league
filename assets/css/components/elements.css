@@ -24,15 +24,17 @@
   margin-right: 0;
 }
 .e-block--league {
-  width: 610px;
-  height: 482px;
+  width: 405px;
+  height: 483px;
   margin-right: 24px;
   position: relative;
   background-color: #130b42;
   background-image: url("../../images/bg_league.svg");
   background-repeat: no-repeat;
   background-position: 265px 30px;
+  border-top-right-radius: 75px;
   transition: all 1s;
+  overflow: hidden;
 }
 .e-block--league:last-of-type {
   margin-right: 0;
@@ -57,7 +59,16 @@
   height: 460px;
   bottom: 0;
   right: 0;
-  background: url("../../images/bristleback.png") no-repeat right bottom;
+  background: url("../../images/bristleabck_cutted.png") no-repeat right center;
+}
+.e-block--league.pro:after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 460px;
+  bottom: 0;
+  right: 0;
+  background: url("../../images/invoker2.png") no-repeat right center;
 }
 .e-block--league .logo {
   width: 90px;
@@ -70,9 +81,13 @@
 .solo .logo {
   background: url("../../images/logo_solo.svg") no-repeat center center;
 }
-.e-block--league .t-title-h3 {
-  padding: 26px 40px 22px 40px;
+.pro .logo {
+  background: url("../../images/logo_pro.svg") no-repeat center center;
+}
+.e-block--league .t-title-h4 {
+  padding: 26px 0 22px 20px;
   margin: 20px 0;
+  color: #130b42;
 }
 .e-block--league .t-list {
   padding-left: 22px;
@@ -86,16 +101,17 @@
   z-index: 10;
   color: #a1b6ff;
   border: 2px solid #a1b6ff;
+  background: #250e4a;
 }
 /* .s-three {
 
 } */
-.s-three .nonpro .logo {
+.s-three .logo {
   width: 125px;
   height: 193px;
   margin: auto;
 }
-.s-three .nonpro .t-title-h3 {
+.s-three .t-title-h3 {
   padding: 26px 40px 22px 40px;
   margin: 20px 0;
   font-size: 58px;
@@ -142,11 +158,11 @@
 }
 .e-block--shcedule .icon-swords.right-top:after {
   top: 55px;
-  right: 320px;
+  left: 200px;
 }
 .e-block--shcedule .icon-swords.right:after {
-  top: 170px;
-  right: 320px;
+  top: 50px;
+  left: 200px;
 }
 .e-block--shcedule .icon-swords.left:after {
   top: 55px;
@@ -164,7 +180,7 @@
 }
 .e-block--shcedule .o-text-container .icon-lc:after {
   top: 55px;
-  right: 320px;
+  left: 200px;
   width: 34px;
   height: 30px;
   background: url("../../images/icon_champions_league_lfc_6times.svg") no-repeat
@@ -173,7 +189,7 @@
 .e-block--shcedule.left:after {
   content: "";
   top: 10px;
-  left: 356px;
+  right: 8px;
   width: 160px;
   height: 15px;
   position: absolute;
@@ -184,12 +200,17 @@
 .e-block--shcedule.right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
+/* .e-block--shcedule.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 .e-block--shcedule.right .o-text-container:after {
   content: "";
   top: 10px;
-  right: 357px;
+  left: 6px;
   width: 160px;
   height: 15px;
   position: absolute;
@@ -198,9 +219,9 @@
   z-index: 10;
 }
 
-.e-vertical-line {
+.e-vertical-line--red {
   top: 0;
-  left: 50%;
+  left: 2%;
   transform: translateX(-50%);
   width: 1px;
   height: 976px;
@@ -212,6 +233,20 @@
     rgba(251, 60, 117, 0) 95.16%
   );
 }
+.e-vertical-line--yellow {
+  top: 0;
+  right: 2%;
+  width: 1px;
+  height: 976px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    179.99deg,
+    rgba(239, 255, 49, 0) 0%,
+    #efff31 32.29%,
+    #efff31 67.19%,
+    rgba(239, 255, 49, 0) 95.16%
+  );
+}
 
 /* prize section */
 .e-block--prize {
@@ -219,6 +254,23 @@
   height: 487px;
   padding: 23px 28px;
   position: relative;
+}
+.e-block--prize-solo {
+  width: 405px;
+  height: 180px;
+  padding: 23px 28px;
+  position: relative;
+}
+.e-block--prize-solo.small {
+  width: 280px;
+}
+.e-block--prize-solo h3 {
+  margin: 0;
+}
+.e-block--prize-solo h4 {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 .e-block--prize:after {
   content: "";
@@ -235,6 +287,7 @@
     rgba(251, 60, 117, 0) 95.16%
   );
 }
+
 .e-block--prize:before {
   content: "";
   top: 0;
@@ -250,6 +303,19 @@
     rgba(251, 60, 117, 0) 95.16%
   );
 }
+.e-block--prize-solo:before {
+  content: "";
+  top: 0;
+  right: 0;
+  width: 405px;
+  height: 180px;
+  position: absolute;
+  background: url("../../images/prize_corner_XL.svg") no-repeat center center;
+}
+.e-block--prize-solo.small:before {
+  width: 280px;
+  background: url("../../images/prize_corner_L.svg") no-repeat center center;
+}
 .icon-prize-1st {
   top: 130px;
   right: 1px;
@@ -257,6 +323,12 @@
   height: 285px;
   z-index: 1;
   background: url("../../images/prize-1st-place.svg") no-repeat center center;
+}
+.icon-prize-1st.solo {
+  top: -62px;
+  width: 200px;
+  height: 220px;
+  background: url("../../images/icon_prize_solo_1.svg") no-repeat center center;
 }
 .icon-prize-2nd {
   top: 130px;
@@ -266,6 +338,12 @@
   z-index: 10;
   background: url("../../images/prize-2nd-place.svg") no-repeat center center;
 }
+.icon-prize-2nd.solo {
+  top: -62px;
+  width: 200px;
+  height: 220px;
+  background: url("../../images/icon_prize_solo_2.svg") no-repeat center center;
+}
 .icon-prize-3rd {
   top: 130px;
   right: 25px;
@@ -273,6 +351,12 @@
   height: 124px;
   z-index: 10;
   background: url("../../images/prize-3rd-place.svg") no-repeat center center;
+}
+.icon-prize-3rd.solo {
+  top: -62px;
+  width: 200px;
+  height: 220px;
+  background: url("../../images/icon_prize_solo_2.svg") no-repeat center center;
 }
 .icon-prize-4th {
   top: 350px;

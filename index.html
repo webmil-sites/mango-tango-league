@@ -15,6 +15,11 @@
     <script>
       dataLayer = [];
     </script>
+    <!-- Google Tag Manager -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-144227574-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -24,12 +29,13 @@
 
       gtag("config", "UA-144227574-1");
     </script>
-    <!-- Google Tag Manager -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-144227574-1"
-    ></script>
     <!-- End Google Tag Manager -->
+    <link
+      rel="icon"
+      href="./favicon.ico"
+      sizes="16x16 32x32"
+      type="images/ico"
+    />
   </head>
   <body>
     <div class="o-page-container">
@@ -37,7 +43,7 @@
         <a href="#" class="logo"></a>
         <a
           class="button-action"
-          href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
+          href=""
           onclick="dataLayer.push({
                 'clickCounter': 1,
                 'event': 'button Header',
@@ -64,9 +70,26 @@
         <!-- <div class="e-block--video-container"></div> -->
       </section>
       <section class="o-container--section s-two d-flex">
+        <div class="e-block--league solo">
+          <div class="logo"></div>
+          <h3 class="t-title-h4 c-bg-league--red t-bold">Solo League</h3>
+          <ul class="t-list c-t-white">
+            <li>1x1</li>
+            <li>SOLO MID</li>
+          </ul>
+          <a
+            href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
+            class="button-action"
+            onclick="dataLayer.push({
+                                  'clickCounter': 1,
+                                  'event': 'button Solo League',
+                                  'value':'Принять участие Solo League'});"
+            >Принять участие
+          </a>
+        </div>
         <div class="e-block--league nonpro">
           <div class="logo"></div>
-          <h3 class="t-title-h3 c-bg-league--yellow t-bold">Non-pro League</h3>
+          <h3 class="t-title-h4 c-bg-league--yellow t-bold">Non-pro League</h3>
           <ul class="t-list c-t-white">
             <li>Team</li>
             <li>Capitans Mode</li>
@@ -81,33 +104,45 @@
             >Принять участие
           </a>
         </div>
-        <div class="e-block--league solo">
+
+        <div class="e-block--league pro">
           <div class="logo"></div>
-          <h3 class="t-title-h3 c-bg-league--red t-bold">Solo League</h3>
+          <h3 class="t-title-h4 c-bg-league--blue t-bold">Pro League</h3>
           <ul class="t-list c-t-white">
-            <li>1x1</li>
-            <li>SOLO MID</li>
+            <li>50 direct invitations</li>
+            <li>Coming Soon</li>
           </ul>
-          <a
+          <!-- <a
             href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
             class="button-action"
             onclick="dataLayer.push({
                   'clickCounter': 1,
-                  'event': 'button Solo League',
-                  'value':'Принять участие Solo League'});"
+                  'event': 'button Pro League',
+                  'value':'Принять участие Pro League'});"
             >Принять участие
-          </a>
+          </a> -->
         </div>
       </section>
-      <section class="o-container--section s-three d-flex--center ">
+
+      <section class="o-container--section s-three d-flex--center">
         <div class="nonpro t-center">
           <div class="logo"></div>
           <h3 class="t-title-h3 color-t-yellow t-bold">Non-pro League</h3>
           <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
         </div>
+        <div class="solo t-center">
+          <div class="logo"></div>
+          <h3 class="t-title-h3 t-bold color-t-vivid-red">
+            Solo League
+          </h3>
+          <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
+        </div>
       </section>
-      <section class="o-container--section s-four margin-b-50">
-        <div class="o-container--shedule d-flex--column position-rel">
+
+      <section class="o-container--section s-four margin-b-50 d-flex--center">
+        <div
+          class="o-container--shedule d-flex--column position-rel column-width-50"
+        >
           <div class="e-block--shcedule left">
             <h4 class="color-t-vivid-red">16 июля - 31 июля</h4>
             <ul class="t-list-bulletless icon-item icon-ammo">
@@ -115,12 +150,12 @@
               <li><span>Capitans Mode</span></li>
             </ul>
           </div>
-          <div class="e-block--shcedule margin-t-80">
+          <!-- <div class="e-block--shcedule margin-t-80">
             <p class="t-max-width icon-item icon-heads">
               Игроки участвовавшие в турнирах DPC-сезона не допускаются.
             </p>
-          </div>
-          <div class="e-block--shcedule right">
+          </div> -->
+          <!-- <div class="e-block--shcedule right">
             <div class="o-text-container">
               <h4 class="color-t-vivid-red ">3, 10, 17, 31 августа</h4>
               <ul class="t-list-bulletless icon-item icon-swords right">
@@ -133,7 +168,7 @@
                 <li>CIS DIVISION В - ТОР 8-16 команд</li>
               </ul>
             </div>
-          </div>
+          </div> -->
           <div class="e-block--shcedule left margin-t-50">
             <h4 class="color-t-vivid-red ">1 сентября - 1 декабря</h4>
             <p>Online турнир. Этап 1</p>
@@ -142,6 +177,59 @@
               <li>CIS DIVISION A x 8 команд</li>
             </ul>
           </div>
+          <!-- <div class="e-block--shcedule right margin-t-80">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red icon-item icon-swords right-top">
+                декабрь
+              </h4>
+              <p>Online турнир. Этап 2</p>
+              <p>ТОР4 команды CIS DIVISION A сразятся в play off</p>
+              <ul class="t-list-bulletless">
+                <li>CIS DIVISION В x 8 команд</li>
+                <li>CIS DIVISION A x 8 команд</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div class="e-vertical-line--yellow position-abs"></div>
+        </div>
+        <div
+          class="o-container--shedule d-flex--column position-rel column-width-50"
+        >
+          <!-- <div class="e-block--shcedule left">
+            <h4 class="color-t-vivid-red">16 июля - 31 июля</h4>
+            <ul class="t-list-bulletless icon-item icon-ammo">
+              <li><span>Регистрация команд.</span></li>
+              <li><span>Capitans Mode</span></li>
+            </ul>
+          </div> -->
+          <!-- <div class="e-block--shcedule margin-t-80">
+            <p class="t-max-width icon-item icon-heads">
+              Игроки участвовавшие в турнирах DPC-сезона не допускаются.
+            </p>
+          </div> -->
+          <div class="e-block--shcedule right">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red">3, 10, 17, 31 августа</h4>
+              <ul class="t-list-bulletless icon-item icon-swords right">
+                <li>Открытые квалификации</li>
+                <li>4 отборочных раз в неделю.</li>
+                <li>Free to play</li>
+              </ul>
+              <!-- <ul class="t-list-bulletless icon-item icon-lc">
+                <li>CIS DIVISION A - ТОР 8 команд</li>
+                <li>CIS DIVISION В - ТОР 8-16 команд</li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- <div class="e-block--shcedule left margin-t-50">
+            <h4 class="color-t-vivid-red ">1 сентября - 1 декабря</h4>
+            <p>Online турнир. Этап 1</p>
+            <ul class="t-list-bulletless icon-item icon-swords left">
+              <li>CIS DIVISION В x 8 команд</li>
+              <li>CIS DIVISION A x 8 команд</li>
+            </ul>
+          </div> -->
           <div class="e-block--shcedule right margin-t-80">
             <div class="o-text-container">
               <h4 class="color-t-vivid-red icon-item icon-swords right-top">
@@ -155,17 +243,144 @@
               </ul>
             </div>
           </div>
-          <div class="e-vertical-line position-abs"></div>
+          <div class="e-vertical-line--red position-abs"></div>
         </div>
       </section>
+
+      <section class="o-container--section s-three d-flex--center margin-t-360">
+        <div class="nonpro t-center">
+          <div class="logo"></div>
+        </div>
+        <div class="nonpro t-center">
+          <h3 class="t-title-h3 t-bold">1 октября</h3>
+          <p class="c-t-white f-size-24 t-max-width">
+            Награждение за выполнение квестов coming soon
+          </p>
+        </div>
+        <div class="solo">
+          <div class="logo"></div>
+        </div>
+      </section>
+
+      <section class="o-container--section s-four margin-b-50 d-flex--center">
+        <div
+          class="o-container--shedule d-flex--column position-rel column-width-50"
+        >
+          <div class="e-block--shcedule left">
+            <h4 class="color-t-vivid-red">16 июля - 31 июля</h4>
+            <ul class="t-list-bulletless icon-item icon-ammo">
+              <li><span>Регистрация команд.</span></li>
+              <li><span>Capitans Mode</span></li>
+            </ul>
+          </div>
+          <!-- <div class="e-block--shcedule margin-t-80">
+            <p class="t-max-width icon-item icon-heads">
+              Игроки участвовавшие в турнирах DPC-сезона не допускаются.
+            </p>
+          </div> -->
+          <!-- <div class="e-block--shcedule right">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red ">3, 10, 17, 31 августа</h4>
+              <ul class="t-list-bulletless icon-item icon-swords right">
+                <li>Открытые квалификации</li>
+                <li>4 отборочных раз в неделю.</li>
+                <li>Free to play</li>
+              </ul>
+              <ul class="t-list-bulletless icon-item icon-lc">
+                <li>CIS DIVISION A - ТОР 8 команд</li>
+                <li>CIS DIVISION В - ТОР 8-16 команд</li>
+              </ul>
+            </div>
+          </div> -->
+          <div class="e-block--shcedule left margin-t-50">
+            <h4 class="color-t-vivid-red ">1 сентября - 1 декабря</h4>
+            <p>Online турнир. Этап 1</p>
+            <ul class="t-list-bulletless icon-item icon-swords left">
+              <li>CIS DIVISION В x 8 команд</li>
+              <li>CIS DIVISION A x 8 команд</li>
+            </ul>
+          </div>
+          <!-- <div class="e-block--shcedule right margin-t-80">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red icon-item icon-swords right-top">
+                декабрь
+              </h4>
+              <p>Online турнир. Этап 2</p>
+              <p>ТОР4 команды CIS DIVISION A сразятся в play off</p>
+              <ul class="t-list-bulletless">
+                <li>CIS DIVISION В x 8 команд</li>
+                <li>CIS DIVISION A x 8 команд</li>
+              </ul>
+            </div>
+          </div> -->
+
+          <div
+            class="e-vertical-line--yellow position-abs max-height-480 "
+          ></div>
+        </div>
+        <div
+          class="o-container--shedule d-flex--column position-rel column-width-50"
+        >
+          <!-- <div class="e-block--shcedule left">
+            <h4 class="color-t-vivid-red">16 июля - 31 июля</h4>
+            <ul class="t-list-bulletless icon-item icon-ammo">
+              <li><span>Регистрация команд.</span></li>
+              <li><span>Capitans Mode</span></li>
+            </ul>
+          </div> -->
+          <!-- <div class="e-block--shcedule margin-t-80">
+            <p class="t-max-width icon-item icon-heads">
+              Игроки участвовавшие в турнирах DPC-сезона не допускаются.
+            </p>
+          </div> -->
+          <div class="e-block--shcedule right">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red">3, 10, 17, 31 августа</h4>
+              <ul class="t-list-bulletless icon-item icon-swords right">
+                <li>Открытые квалификации</li>
+                <li>4 отборочных раз в неделю.</li>
+                <li>Free to play</li>
+              </ul>
+              <!-- <ul class="t-list-bulletless icon-item icon-lc">
+                <li>CIS DIVISION A - ТОР 8 команд</li>
+                <li>CIS DIVISION В - ТОР 8-16 команд</li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- <div class="e-block--shcedule left margin-t-50">
+            <h4 class="color-t-vivid-red ">1 сентября - 1 декабря</h4>
+            <p>Online турнир. Этап 1</p>
+            <ul class="t-list-bulletless icon-item icon-swords left">
+              <li>CIS DIVISION В x 8 команд</li>
+              <li>CIS DIVISION A x 8 команд</li>
+            </ul>
+          </div> -->
+          <div class="e-block--shcedule right margin-t-80">
+            <div class="o-text-container">
+              <h4 class="color-t-vivid-red icon-item icon-swords right-top">
+                декабрь
+              </h4>
+              <p>Online турнир. Этап 2</p>
+              <p>ТОР4 команды CIS DIVISION A сразятся в play off</p>
+              <ul class="t-list-bulletless">
+                <li>CIS DIVISION В x 8 команд</li>
+                <li>CIS DIVISION A x 8 команд</li>
+              </ul>
+            </div>
+          </div>
+          <div class="e-vertical-line--red position-abs max-height-480"></div>
+        </div>
+      </section>
+
       <section
         class="o-container--section s-three d-flex--center position-rel margin-b-50"
       >
         <div class="nonpro t-center">
           <div class="icon-item icon-lc-xl"></div>
-          <h3 class="t-title-h3 color-t-vivid-red">ПРИЗЫ</h3>
+          <h3 class="t-title-h3 color-t-yellow">ПРИЗЫ NON-PRO LEGUE</h3>
         </div>
       </section>
+
       <section class="o-container--section-prize d-flex--sp-arnd margin-b-50">
         <div class="e-block--prize c-bg-prize--red position-rel">
           <h4 class="color-t-vivid-red t-uppercase t-center f-size-24">
@@ -203,6 +418,85 @@
           <div class="icon-prize-4th position-abs"></div>
         </div>
       </section>
+
+      <section
+        class="o-container--section s-three d-flex--center position-rel margin-b-50"
+      >
+        <div class="nonpro t-center">
+          <div class="icon-item icon-lc-xl"></div>
+          <h3 class="t-title-h3 color-t-vivid-red">ПРИЗЫ solo league</h3>
+        </div>
+      </section>
+
+      <section class="o-container--section-prize d-flex--sp-arnd margin-b-50">
+        <div class="e-block--prize-solo c-bg-prize--red position-rel">
+          <h4 class="color-t-vivid-red t-uppercase f-size-24">
+            II место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">$3 500</h3>
+          <!-- <p class="t-max-width-smoll f-size-24">Геймерские девайсы</p> -->
+          <div class="icon-prize-2nd solo position-abs"></div>
+        </div>
+        <div
+          class="e-block--prize-solo c-bg-prize--red position-rel margin-t--60"
+        >
+          <h4 class="color-t-vivid-red t-uppercase f-size-36">
+            I место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">
+            $5 000
+          </h3>
+          <div class="icon-prize-1st solo position-abs"></div>
+        </div>
+        <div class="e-block--prize-solo c-bg-prize--red position-rel">
+          <h4 class="color-t-vivid-red t-uppercase f-size-24">
+            III место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">
+            $1 500
+          </h3>
+          <div class="icon-prize-3rd solo position-abs"></div>
+          <!-- <h4 class="color-t-vivid-red t-uppercase t-center f-size-24">
+            Iv место
+          </h4> -->
+          <!-- <div class="icon-prize-4th solo position-abs"></div> -->
+        </div>
+      </section>
+      <section class="o-container--section-prize d-flex--sp-arnd margin-b-50">
+        <div class="e-block--prize-solo small c-bg-prize--red position-rel">
+          <h4 class="color-t-vivid-red t-uppercase f-size-24">
+            II место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">$3 500</h3>
+          <!-- <p class="t-max-width-smoll f-size-24">Геймерские девайсы</p> -->
+          <!-- <div class="icon-prize-2nd solo position-abs"></div> -->
+        </div>
+        <div
+          class="e-block--prize-solo small c-bg-prize--red position-rel margin-t--60"
+        >
+          <h4 class="color-t-vivid-red t-uppercase f-size-36">
+            I место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">
+            $5 000
+          </h3>
+          <!-- <div class="icon-prize-1st solo position-abs"></div> -->
+        </div>
+        <div class="e-block--prize-solo small c-bg-prize--red position-rel">
+          <h4 class="color-t-vivid-red t-uppercase f-size-24">
+            III место
+          </h4>
+          <h3 class="t-event-prize t-title-h3 f-size-64">
+            $1 500
+          </h3>
+          <!-- <div class="icon-prize-3rd solo position-abs"></div> -->
+          <!-- <h4 class="color-t-vivid-red t-uppercase t-center f-size-24">
+            Iv место
+          </h4> -->
+          <!-- <div class="icon-prize-4th solo position-abs"></div> -->
+        </div>
+      </section>
+
       <section
         class="o-container--section s-three d-flex--center position-rel margin-b-130"
       >
