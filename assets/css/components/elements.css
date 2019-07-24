@@ -196,6 +196,10 @@
     no-repeat center center;
   background-size: 100%;
 }
+.e-block--shcedule.left {
+  width: 480px;
+  padding-right: 120px;
+}
 .e-block--shcedule.left:after {
   content: "";
   top: 10px;

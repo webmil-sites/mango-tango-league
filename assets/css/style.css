@@ -23,6 +23,9 @@
   display: flex;
   justify-content: space-between;
 }
+.d-align-items--end {
+  align-items: flex-end;
+}
 .d-flex--sp-arnd {
   display: flex;
   justify-content: space-around;
@@ -86,4 +89,7 @@
 }
 .height-480 {
   height: 480px;
+}
+.max-width-320 {
+  max-width: 320px;
 }
