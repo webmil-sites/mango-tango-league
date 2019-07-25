@@ -177,6 +177,11 @@
   height: 30px;
   background: url("../../images/icon_swords.svg") no-repeat center center;
 }
+.icon-swords.sword-dark:after {
+  bottom: 25px;
+  left: 0;
+  background: url("../../images/Icon_swords_dark.svg") no-repeat center center;
+}
 .e-block--shcedule .icon-swords.right-top:after {
   top: 55px;
   left: 200px;
