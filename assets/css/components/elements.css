@@ -144,12 +144,33 @@
   height: 38px;
   background: url("../../images/icon_ammo-yellow.svg") no-repeat center center;
 }
-.e-block--shcedule .icon-heads:after {
+/* .e-block--shcedule .icon-heads:after {
   top: -60px;
   left: 60px;
   width: 155px;
   height: 36px;
   background: url("../../images/icon_heads.svg") no-repeat center center;
+} */
+.icon-knight:after {
+  top: 100px;
+  left: -16px;
+  width: 62px;
+  height: 62px;
+  background: url("../../images/icon_knight.svg") no-repeat center center;
+}
+.icon-legend:after {
+  top: 179px;
+  left: -16px;
+  width: 62px;
+  height: 62px;
+  background: url("../../images/icon_legend.svg") no-repeat center center;
+}
+.icon-godlike:after {
+  top: 265px;
+  left: -16px;
+  width: 62px;
+  height: 62px;
+  background: url("../../images/icon_godlike.svg") no-repeat center center;
 }
 .e-block--shcedule .icon-swords:after {
   width: 34px;
