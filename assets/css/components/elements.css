@@ -10,7 +10,7 @@
 .e-block--video-container {
   width: 770px;
   height: 462px;
-  background: url("../../images/video_palceholder.svg") no-repeat center center;
+  background: url("../../images/place_holder_video.jpg") no-repeat center center;
 }
 .e-block-social-sprite {
   max-width: 420px;
@@ -338,10 +338,29 @@
   z-index: 1;
   background: url("../../images/prize-1st-place.svg") no-repeat center center;
 }
+.icon-prize--additional {
+  text-align: center;
+  bottom: -150px;
+  left: -11px;
+  width: 425px;
+  height: 165px;
+  padding-top: 100px;
+  background: url("../../images/icon_prize_1st-additional.svg") no-repeat left
+    center;
+}
+.icon-prize--additional.solo {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650px;
+  height: 240px;
+  background: url("../../images/top5.svg") no-repeat center center;
+}
 .icon-prize-1st.solo {
   top: -62px;
   width: 200px;
   height: 220px;
+  padding-top: 100px;
   background: url("../../images/icon_prize_solo_1.svg") no-repeat center center;
 }
 .icon-prize-2nd {
