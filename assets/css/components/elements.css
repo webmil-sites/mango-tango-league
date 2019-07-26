@@ -153,22 +153,25 @@
   background: url("../../images/icon_heads.svg") no-repeat center center;
 } */
 .icon-knight:after {
-  top: 100px;
-  left: -16px;
+  /* top: 100px; */
+  top: 0;
+  left: -75px;
   width: 62px;
   height: 62px;
   background: url("../../images/icon_knight.svg") no-repeat center center;
 }
 .icon-legend:after {
-  top: 179px;
-  left: -16px;
+  /* top: 179px; */
+  top: -5px;
+  left: -75px;
   width: 62px;
   height: 62px;
   background: url("../../images/icon_legend.svg") no-repeat center center;
 }
 .icon-godlike:after {
-  top: 265px;
-  left: -16px;
+  /* top: 265px; */
+  top: 0;
+  left: -75px;
   width: 62px;
   height: 62px;
   background: url("../../images/icon_godlike.svg") no-repeat center center;
@@ -359,11 +362,11 @@
 }
 .icon-prize-1st {
   top: 130px;
-  right: 1px;
+  right: -26px;
   width: 400px;
   height: 285px;
   z-index: 1;
-  background: url("../../images/prize-1st-place.svg") no-repeat center center;
+  background: url("../../images/prize_1st_150k.svg") no-repeat center center;
 }
 .icon-prize--additional {
   text-align: center;
@@ -396,21 +399,21 @@
   width: 265px;
   height: 275px;
   z-index: 10;
-  background: url("../../images/prize-2nd-place.svg") no-repeat center center;
+  background: url("../../images/prize_2nd-100k.svg") no-repeat center center;
 }
 .icon-prize-2nd.solo {
   top: -62px;
   width: 200px;
   height: 220px;
-  background: url("../../images/icon_prize_solo_2.svg") no-repeat center center;
+  background: url("../../images/icon_prize_solo_3.svg") no-repeat center center;
 }
 .icon-prize-3rd {
   top: 130px;
-  right: 25px;
+  right: 35px;
   width: 149px;
   height: 124px;
   z-index: 10;
-  background: url("../../images/prize-3rd-place.svg") no-repeat center center;
+  background: url("../../images/icon_prize_75k.svg") no-repeat center center;
 }
 .icon-prize-3rd.solo {
   top: -62px;

@@ -6,6 +6,7 @@
   /* background: url("../../images/bg_full.jpg") no-repeat center center; */
   background: url("../../images/background.jpg") no-repeat center top;
   background-size: cover;
+  background-color: #0f0628;
 }
 .o-container {
   max-width: 1772px;

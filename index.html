@@ -64,10 +64,13 @@
                   'value':'Принять участие'});"
             >Принять участие
           </a>
-          <h2 class="t-event-prize t-title-h3">$12 000</h2>
+          <h2 class="t-event-prize t-title-h3">
+            $12 000 <br />+ <br />
+            1000000 Faceit Points
+          </h2>
           <p class="t-event-date">1 августа - 1 декабря</p>
         </div>
-        <div class="e-block--video-container"></div>
+        <!-- <div class="e-block--video-container"></div> -->
       </section>
 
       <section class="o-container--section s-two d-flex">
@@ -92,8 +95,8 @@
           <div class="logo"></div>
           <h3 class="t-title-h4 c-bg-league--yellow t-bold">Non-pro League</h3>
           <ul class="t-list c-t-white">
-            <li>Team</li>
-            <li>Capitans Mode</li>
+            <li>Team 5x5</li>
+            <li>Captains Mode</li>
           </ul>
           <a
             href="https://www.faceit.com/en/hub/42184780-eadc-48fb-a6a7-726c091ba13b/MTL%205x5%20Calibration%20Division"
@@ -110,7 +113,7 @@
           <div class="logo"></div>
           <h3 class="t-title-h4 c-bg-league--blue t-bold">Pro League</h3>
           <ul class="t-list c-t-white">
-            <li>50 direct invitations</li>
+            <li>50 direct invites</li>
             <li>Coming Soon</li>
           </ul>
           <!-- <a
@@ -154,7 +157,7 @@
               </li>
             </ul>
             <ul class="t-list-bulletless icon-item icon-ammo">
-              <li><span>Solo; 5x5 Capitans Mode</span></li>
+              <li><span>Solo; 5x5 Captains Mode</span></li>
             </ul>
           </div>
 
@@ -163,17 +166,24 @@
             <p class="icon-item icon-ammo color-t-yellow">
               Распределение на дивизионы:
             </p>
-            <ul class="t-list-bulletless icon-item icon-knight left">
-              <li>Рыцарь (lvl 1-4) Team</li>
-              <li>Team, Solo; 5x5 Capitans Mode</li>
+            <ul
+              class="t-list-bulletless icon-item icon-godlike left position-rel"
+            >
+              <li>Божество</li>
+              <li>Team, Solo; 5x5 Captains Mode</li>
             </ul>
-            <ul class="t-list-bulletless icon-item icon-legend left">
-              <li>Легенда (lvl 5-8)</li>
-              <li>Team, Solo; 5x5 Capitans Mode</li>
+            <ul
+              class="t-list-bulletless icon-item icon-legend left position-rel"
+            >
+              <li>Легенда</li>
+              <li>Team, Solo; 5x5 Captains Mode</li>
             </ul>
-            <ul class="t-list-bulletless icon-item icon-godlike left">
-              <li>Божество (lvl 9-10)</li>
-              <li>Team, Solo; 5x5 Capitans Mode</li>
+
+            <ul
+              class="t-list-bulletless icon-item icon-knight left position-rel"
+            >
+              <li>Рыцарь</li>
+              <li>Team, Solo; 5x5 Captains Mode</li>
             </ul>
           </div>
 
@@ -311,7 +321,9 @@
           <h4 class="color-t-vivid-red t-uppercase t-center f-size-24">
             III место
           </h4>
-          <h3 class="t-event-prize t-title-h3 f-size-64 margin-tb-88">
+          <h3
+            class="t-event-prize t-title-h3 f-size-64 margin-tb-88 padding-left-20"
+          >
             $1 500
           </h3>
           <div class="icon-prize-3rd position-abs"></div>
@@ -404,7 +416,7 @@
         <div class="position-rel padding-t-170">
           <div class="icon-prize--additional solo position-abs"></div>
           <p class="font-size-30">
-            топ-5 игроков 1 Сезона получают инвайты в Про Лигу
+            каждый месяц - Faceit points, hardware, арканы, скины
           </p>
         </div>
       </section>
@@ -437,13 +449,20 @@
       <div class="o-container--footer d-flex--sp-btw">
         <a href="#" class="logo"></a>
         <nav class="e-block-social-sprite">
-          <!-- <a href=" " class="social-icon union"></a> -->
+          <a
+            href="https://discord.gg/SSxY2Kw"
+            class="social-icon union"
+            onclick="dataLayer.push({
+                  'clickCounter': 1,
+                  'event': 'button discord',
+                  'value':'social discord'});"
+          ></a>
           <a
             href="https://vk.com/dota2mc"
             class="social-icon vk"
             onclick="dataLayer.push({
                   'clickCounter': 1,
-                  'event': 'button Partner Faceit',
+                  'event': 'button social vk',
                   'value':'social vk'});"
           ></a>
           <a
