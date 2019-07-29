@@ -73,11 +73,11 @@
         <!-- <div class="e-block--video-container"></div> -->
       </section>
 
-      <section class="o-container--section s-two d-flex">
+      <section class="o-container--section s-two d-flex--column-center">
         <div class="e-block--league solo">
           <div class="logo"></div>
           <h3 class="t-title-h4 c-bg-league--red t-bold">Solo League</h3>
-          <ul class="t-list c-t-white">
+          <ul class="t-list c-t-white position-rel-z">
             <li>1x1</li>
             <li>SOLO MID</li>
           </ul>
@@ -129,22 +129,23 @@
       </section>
 
       <section class="o-container--section s-three d-flex--center">
-        <div class="nonpro t-center column-width-50">
+        <div id="button-toogle-nonpro" class="nonpro t-center column-width-50">
           <div class="logo"></div>
-          <h3 class="t-title-h3 color-t-yellow t-bold">Non-pro League</h3>
+          <h3 class="t-title-h3 color-t-yellow t-bold">Non-pro <br />League</h3>
           <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
         </div>
-        <div class="solo t-center column-width-50">
+        <div id="button-toogle-solo" class="solo t-center column-width-50">
           <div class="logo"></div>
-          <h3 class="t-title-h3 t-bold color-t-vivid-red">
-            Solo League
-          </h3>
+          <h3 class="t-title-h3 t-bold color-t-vivid-red">Solo <br />League</h3>
           <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
         </div>
       </section>
 
-      <section class="o-container--section s-four margin-b-50 d-flex--center">
+      <section
+        class="o-container--section s-four margin-b-50 d-flex--center d-flex--column-mobile"
+      >
         <div
+          id="content-nonpro"
           class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 d-align-items--end"
         >
           <div class="e-block--shcedule left">
@@ -199,7 +200,8 @@
         </div>
 
         <div
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 "
+          id="content-solo"
+          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 js-hide"
         >
           <div class="e-block--shcedule right">
             <div class="o-text-container">
@@ -226,23 +228,26 @@
       </section>
 
       <section class="o-container--section s-three d-flex--center margin-t-360">
-        <div class="nonpro t-center">
+        <div class="nonpro t-center loho-hide-mobile">
           <div class="logo"></div>
         </div>
         <div class="nonpro t-center">
-          <h3 class="t-title-h3 t-bold">1 октября</h3>
-          <p class="c-t-white f-size-24 t-max-width">
+          <h3 class="t-title-h3 t-bold color-t-yellow--mobile">1 октября</h3>
+          <p class="c-t-white color-t-yellow--mobile f-size-24 t-max-width">
             Награждение за выполнение квестов coming soon
           </p>
         </div>
-        <div class="solo">
+        <div class="solo loho-hide-mobile">
           <div class="logo"></div>
         </div>
       </section>
 
-      <section class="o-container--section s-four margin-b-50 d-flex--center">
+      <section
+        class="o-container--section s-four margin-b-50 d-flex--center d-flex--column-mobile"
+      >
         <div
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 height-480 d-align-items--end"
+          id="content-nonpro-bottom"
+          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 height-480 d-align-items--end "
         >
           <div class="e-block--shcedule left">
             <h4 class="color-t-yellow">1 ноября</h4>
@@ -265,7 +270,8 @@
         </div>
 
         <div
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50"
+          id="content-solo-bottom"
+          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 js-hide"
         >
           <div class="e-block--shcedule right">
             <div class="o-text-container">
@@ -289,7 +295,9 @@
         </div>
       </section>
 
-      <section class="o-container--section-prize d-flex--sp-arnd margin-b-350">
+      <section
+        class="o-container--section-prize d-flex--sp-arnd margin-b-350 d-flex--column-center"
+      >
         <div class="e-block--prize c-bg-prize--red position-rel">
           <h4 class="color-t-vivid-red t-uppercase t-center f-size-24">
             II место
@@ -343,7 +351,9 @@
         </div>
       </section>
 
-      <section class="o-container--section-prize d-flex--sp-arnd margin-b-50">
+      <section
+        class="o-container--section-prize d-flex--sp-arnd margin-b-50 d-flex--column-center"
+      >
         <div class="e-block--prize-solo c-bg-prize--red position-rel">
           <h4 class="color-t-vivid-red t-uppercase f-size-24">
             II место
@@ -377,7 +387,9 @@
           <!-- <div class="icon-prize-4th solo position-abs"></div> -->
         </div>
       </section>
-      <section class="o-container--section-prize d-flex--sp-arnd margin-b-50">
+      <section
+        class="o-container--section-prize d-flex--sp-arnd margin-b-50 d-flex--column-center"
+      >
         <div class="e-block--prize-solo small c-bg-prize--red position-rel">
           <h4 class="color-t-vivid-red t-uppercase f-size-24">
             Iv место

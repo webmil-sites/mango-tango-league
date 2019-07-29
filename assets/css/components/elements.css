@@ -5,7 +5,12 @@
   align-self: flex-start;
 }
 .e-block--event-info {
-  padding: 60px 75px 0px 0px;
+  padding: 60px 75px 0 120px;
+}
+@media screen and (min-width: 1080px) {
+  .e-block--event-info {
+    padding: 60px 75px 0px 150px;
+  }
 }
 .e-block--video-container {
   width: 770px;
@@ -27,7 +32,7 @@
 .e-block--league {
   width: 405px;
   height: 483px;
-  margin-right: 24px;
+  margin-bottom: 35px;
   position: relative;
   background-color: #130b42;
   background-image: url("../../images/bg_league.svg");
@@ -37,21 +42,16 @@
   transition: all 1s;
   overflow: hidden;
 }
+@media only screen and (min-width: 1080px) {
+  .e-block--league {
+    margin-right: 24px;
+  }
+}
 .e-block--league:last-of-type {
   margin-right: 0;
 }
 .e-block--league:hover {
   box-shadow: 0px 4px 200px rgba(255, 0, 107, 0.48);
-}
-
-.e-block--league.nonpro:after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 460px;
-  bottom: 0;
-  right: 0;
-  background: url("../../images/dkmodel.png") no-repeat right center;
 }
 .e-block--league.solo:after {
   content: "";
@@ -59,8 +59,19 @@
   width: 380px;
   height: 460px;
   bottom: 0;
-  right: 0;
+  right: -60px;
   background: url("../../images/bristleabck_cutted.png") no-repeat right center;
+  background-size: contain;
+}
+.e-block--league.nonpro:after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 460px;
+  bottom: 0;
+  right: -30px;
+  background: url("../../images/dkmodel.png") no-repeat right center;
+  background-size: contain;
 }
 .e-block--league.pro:after {
   content: "";
@@ -68,9 +79,84 @@
   width: 380px;
   height: 460px;
   bottom: 0;
-  right: 0;
+  right: -40px;
   background: url("../../images/invoker2.png") no-repeat right center;
+  background-size: contain;
 }
+@media only screen and (min-width: 780px) and (max-width: 1080px) {
+  .e-block--league.nonpro:after {
+    /* content: "";
+    position: absolute; */
+    width: 230px;
+    /* height: 460px;
+    bottom: 0; */
+    right: 0;
+    /* background: url("../../images/dkmodel.png") no-repeat right center; */
+    /* background-size: contain; */
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 1080px) {
+  .e-block--league.solo:after {
+    /* content: "";
+    position: absolute; */
+    width: 380px;
+    /* height: 460px;
+    bottom: 0; */
+    right: -60px;
+    /* background: url("../../images/bristleabck_cutted.png") no-repeat right */
+    /* center; */
+    /* background-size: contain; */
+  }
+}
+@media only screen and(min-width: 780px) and (max-width: 1080px) {
+  .e-block--league.pro:after {
+    /* content: ""; */
+    /* position: absolute; */
+    width: 380px;
+    /* height: 460px; */
+    /* bottom: 0; */
+    right: -40px;
+    /* background: url("../../images/invoker2.png") no-repeat right center; */
+    /* background-size: contain; */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .e-block--league.nonpro:after {
+    /* content: "";
+    position: absolute; */
+    width: 400px;
+    height: 460px;
+    bottom: 0;
+    right: 0;
+    /* background: url("../../images/dkmodel.png") no-repeat right center; */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .e-block--league.solo:after {
+    /* content: "";
+    position: absolute; */
+    width: 380px;
+    height: 460px;
+    bottom: 0;
+    right: -20px;
+    /* background: url("../../images/bristleabck_cutted.png") no-repeat right */
+    /* center; */
+    /* background-size: contain; */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .e-block--league.pro:after {
+    /* content: "";
+    position: absolute; */
+    width: 380px;
+    /* height: 460px; */
+    bottom: 0;
+    right: 0;
+    /* background: url("../../images/invoker2.png") no-repeat right center; */
+    /* background-size: contain; */
+  }
+}
+
 .e-block--league .logo {
   width: 90px;
   height: 140px;
@@ -186,13 +272,14 @@
   left: 0;
   background: url("../../images/Icon_swords_dark.svg") no-repeat center center;
 }
+
 .e-block--shcedule .icon-swords.right-top:after {
   top: 55px;
-  left: 200px;
+  left: 0;
 }
 .e-block--shcedule .icon-swords.right:after {
   top: 55px;
-  left: 120px;
+  left: 0;
 }
 .e-block--shcedule .icon-swords.left:after {
   top: 55px;
@@ -214,7 +301,7 @@
 }
 .e-block--shcedule .icon-lc:after {
   top: 55px;
-  left: 120px;
+  left: 0;
   width: 34px;
   height: 30px;
   background: url("../../images/icon_champions_league_lfc_6times.svg") no-repeat
@@ -230,18 +317,9 @@
   width: 480px;
   padding-right: 120px;
 }
-.e-block--shcedule.left:after {
-  content: "";
-  top: 10px;
-  right: 6px;
-  width: 160px;
-  height: 16px;
-  position: absolute;
-  background: url("../../images/s4_schedule_line-left-yellow.svg") no-repeat
-    center center;
-  z-index: 10;
-}
+
 .e-block--shcedule.right {
+  width: 480px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,47 +329,68 @@
   flex-direction: column;
   align-items: center;
 } */
-.e-block--shcedule.right .o-text-container:after {
-  content: "";
-  top: 10px;
-  left: 6px;
-  width: 160px;
-  height: 15px;
-  position: absolute;
-  background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
-    center;
-  z-index: 10;
-}
 
-.e-vertical-line--red {
-  top: 0;
-  left: 2%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 976px;
-  background: linear-gradient(
-    179.98deg,
-    rgba(255, 0, 77, 0) 0%,
-    #ff145b 32.29%,
-    #ff004d 84.58%,
-    rgba(251, 60, 117, 0) 95.16%
-  );
+@media only screen and (min-width: 1080px) {
+  .e-block--shcedule .icon-swords.right-top:after {
+    left: 200px;
+  }
+  .e-block--shcedule .icon-swords.right:after {
+    left: 120px;
+  }
+  .e-block--shcedule .icon-lc:after {
+    left: 120px;
+  }
+  .e-block--shcedule.left:after {
+    content: "";
+    top: 10px;
+    right: 6px;
+    width: 160px;
+    height: 16px;
+    position: absolute;
+    background: url("../../images/s4_schedule_line-left-yellow.svg") no-repeat
+      center center;
+    z-index: 10;
+  }
+  .e-block--shcedule.right .o-text-container:after {
+    content: "";
+    top: 10px;
+    left: 6px;
+    width: 160px;
+    height: 15px;
+    position: absolute;
+    background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
+      center;
+    z-index: 10;
+  }
+  .e-vertical-line--red {
+    top: 0;
+    left: 2%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 976px;
+    background: linear-gradient(
+      179.98deg,
+      rgba(255, 0, 77, 0) 0%,
+      #ff145b 32.29%,
+      #ff004d 84.58%,
+      rgba(251, 60, 117, 0) 95.16%
+    );
+  }
+  .e-vertical-line--yellow {
+    top: 0;
+    right: 2%;
+    width: 1px;
+    height: 976px;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      179.99deg,
+      rgba(239, 255, 49, 0) 0%,
+      #efff31 32.29%,
+      #efff31 67.19%,
+      rgba(239, 255, 49, 0) 95.16%
+    );
+  }
 }
-.e-vertical-line--yellow {
-  top: 0;
-  right: 2%;
-  width: 1px;
-  height: 976px;
-  transform: translateX(-50%);
-  background: linear-gradient(
-    179.99deg,
-    rgba(239, 255, 49, 0) 0%,
-    #efff31 32.29%,
-    #efff31 67.19%,
-    rgba(239, 255, 49, 0) 95.16%
-  );
-}
-
 /* prize section */
 .e-block--prize {
   width: 405px;
