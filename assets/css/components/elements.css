@@ -235,6 +235,13 @@
   height: 38px;
   background: url("../../images/icon_ammo-yellow.svg") no-repeat center center;
 }
+.e-block--shcedule .icon-ammo-red:after {
+  top: 50px;
+  left: 0;
+  width: 30px;
+  height: 38px;
+  background: url("../../images/icon_ammo.svg") no-repeat center center;
+}
 /* .e-block--shcedule .icon-heads:after {
   top: -60px;
   left: 60px;
@@ -248,7 +255,7 @@
   left: -75px;
   width: 62px;
   height: 62px;
-  background: url("../../images/icon_knight_new.svg") no-repeat center center;
+  background: url("../../images/icon_knight_red.svg") no-repeat center center;
 }
 .icon-legend:after {
   /* top: 179px; */
@@ -256,7 +263,7 @@
   left: -75px;
   width: 62px;
   height: 62px;
-  background: url("../../images/icon_legend_new.svg") no-repeat center center;
+  background: url("../../images/icon_legend_red.svg") no-repeat center center;
 }
 .icon-godlike:after {
   /* top: 265px; */
@@ -264,7 +271,7 @@
   left: -75px;
   width: 62px;
   height: 62px;
-  background: url("../../images/icon_godlike_new.svg") no-repeat center center;
+  background: url("../../images/icon_godlike_red.svg") no-repeat center center;
 }
 .e-block--shcedule .icon-swords:after {
   width: 34px;
@@ -273,7 +280,7 @@
 }
 .icon-swords.sword-dark:after {
   bottom: 25px;
-  left: 0;
+  left: 5px;
   background: url("../../images/Icon_swords_dark.svg") no-repeat center center;
 }
 
@@ -348,16 +355,28 @@
   .e-block--shcedule.right {
     /* width: 480px; */
     /* align-items: center; */
-    padding-left: 175px;
+    padding-left: 195px;
   }
   .e-block--shcedule .icon-swords.right-top:after {
     left: 200px;
   }
   .e-block--shcedule .icon-swords.right:after {
-    left: 120px;
+    left: 140px;
   }
   .e-block--shcedule .icon-lc:after {
-    left: 120px;
+    left: 140px;
+  }
+
+  .e-block--shcedule.right .o-text-container:after {
+    content: "";
+    top: 10px;
+    left: 6px;
+    width: 160px;
+    height: 15px;
+    position: absolute;
+    background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
+      center;
+    z-index: 10;
   }
   .e-block--shcedule.left:after {
     content: "";
@@ -371,22 +390,21 @@
     z-index: 10;
   }
   .e-block--shcedule.right.division {
-    top: 320px;
-    left: 5px;
+    top: 223px;
+    left: 0px;
   }
   .e-block--shcedule.right.division .o-text-container:after {
-    display: none;
-  }
-  .e-block--shcedule.right .o-text-container:after {
-    content: "";
-    top: 10px;
-    left: 6px;
-    width: 160px;
-    height: 15px;
-    position: absolute;
+    /* display: none; */
+
     background: url("../../images/s4_shcedule_line-right.svg") no-repeat center
       center;
-    z-index: 10;
+  }
+  .e-block--shcedule .icon-ammo-red:after {
+    /* top: 50px; */
+    left: 135px;
+    /* width: 30px;
+  height: 38px;
+  background: url("../../images/icon_ammo.svg") no-repeat center center; */
   }
   .e-vertical-line--red {
     top: 0;

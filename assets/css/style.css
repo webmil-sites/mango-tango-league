@@ -18,6 +18,10 @@
   display: flex;
   justify-content: center;
 }
+.d-flex--center-mobile {
+  display: flex;
+  justify-content: center;
+}
 .d-flex--sp-btw {
   display: flex;
   justify-content: space-between;
@@ -46,6 +50,10 @@
   align-items: center;
 }
 @media screen and (min-width: 1080px) {
+  .d-flex--center-mobile {
+    display: flex;
+    justify-content: flex-start;
+  }
   .d-align-items--end {
     align-items: flex-end;
   }
