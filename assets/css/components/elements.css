@@ -347,7 +347,8 @@
   }
   .e-block--shcedule.right {
     /* width: 480px; */
-    align-items: center;
+    /* align-items: center; */
+    padding-left: 175px;
   }
   .e-block--shcedule .icon-swords.right-top:after {
     left: 200px;
@@ -371,7 +372,7 @@
   }
   .e-block--shcedule.right.division {
     top: 320px;
-    left: 120px;
+    left: 5px;
   }
   .e-block--shcedule.right.division .o-text-container:after {
     display: none;
@@ -518,6 +519,14 @@
   height: 240px;
   background: url("../../images/top5.svg") no-repeat center center;
 }
+.icon-prize-main {
+  top: -42px;
+  left: 100px;
+  width: 180px;
+  height: 124px;
+  z-index: 10;
+  background: url("../../images/icon_prize_1M_main.svg") no-repeat center center;
+}
 
 .icon-prize-1st.solo {
   top: -62px;
@@ -543,6 +552,7 @@
   height: 220px;
   background: url("../../images/icon_prize_solo_3.svg") no-repeat center center;
 }
+
 .icon-prize-3rd {
   top: 130px;
   right: 35px;
@@ -606,6 +616,15 @@
     margin-bottom: 0;
     padding: 23px 28px;
     position: relative;
+  }
+  .e-block--prize-solo:before {
+    content: "";
+    top: 0;
+    right: 0;
+    width: 405px;
+    height: 180px;
+    position: absolute;
+    background: url("../../images/prize_corner_XL.svg") no-repeat center center;
   }
   .e-block--prize-solo.small {
     width: 280px;
