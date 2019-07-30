@@ -135,7 +135,7 @@
 
 /*  width */
 .column-width-50 {
-  width: 50%;
+  width: 100%;
 }
 .max-height-480 {
   max-height: 480px;
@@ -154,6 +154,11 @@
 /* #content {
   display: none;
 } */
+@media only screen and (min-width: 1080px) {
+  .column-width-50 {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 1080px) {
   .js-hide {
     opacity: 0;

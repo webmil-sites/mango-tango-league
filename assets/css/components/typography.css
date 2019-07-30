@@ -20,7 +20,7 @@ a {
   text-transform: uppercase;
 }
 .t-title {
-  font-size: 58px;
+  font-size: 48px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -101,4 +101,10 @@ a {
 }
 .e-block--prize h4 {
   margin: 20px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .t-title {
+    font-size: 58px;
+  }
 }

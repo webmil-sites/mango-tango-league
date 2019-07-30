@@ -5,7 +5,7 @@
   align-self: flex-start;
 }
 .e-block--event-info {
-  padding: 60px 75px 0 120px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1080px) {
   .e-block--event-info {
@@ -30,7 +30,7 @@
   margin-right: 0;
 }
 .e-block--league {
-  width: 405px;
+  width: 300px;
   height: 483px;
   margin-bottom: 35px;
   position: relative;
@@ -42,47 +42,51 @@
   transition: all 1s;
   overflow: hidden;
 }
-@media only screen and (min-width: 1080px) {
-  .e-block--league {
-    margin-right: 24px;
-  }
-}
+
 .e-block--league:last-of-type {
   margin-right: 0;
 }
 .e-block--league:hover {
   box-shadow: 0px 4px 200px rgba(255, 0, 107, 0.48);
 }
-.e-block--league.solo:after {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 460px;
-  bottom: 0;
-  right: -60px;
-  background: url("../../images/bristleabck_cutted.png") no-repeat right center;
-  background-size: contain;
+
+@media only screen and (min-width: 620px) {
+  .e-block--league {
+    width: 405px;
+  }
+  .e-block--league.solo:after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 460px;
+    bottom: 0;
+    right: -60px;
+    background: url("../../images/bristleabck_cutted.png") no-repeat right
+      center;
+    background-size: contain;
+  }
+  .e-block--league.nonpro:after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 460px;
+    bottom: 0;
+    right: -30px;
+    background: url("../../images/dkmodel.png") no-repeat right center;
+    background-size: contain;
+  }
+  .e-block--league.pro:after {
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 460px;
+    bottom: 0;
+    right: -40px;
+    background: url("../../images/invoker2.png") no-repeat right center;
+    background-size: contain;
+  }
 }
-.e-block--league.nonpro:after {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 460px;
-  bottom: 0;
-  right: -30px;
-  background: url("../../images/dkmodel.png") no-repeat right center;
-  background-size: contain;
-}
-.e-block--league.pro:after {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 460px;
-  bottom: 0;
-  right: -40px;
-  background: url("../../images/invoker2.png") no-repeat right center;
-  background-size: contain;
-}
+
 @media only screen and (min-width: 780px) and (max-width: 1080px) {
   .e-block--league.nonpro:after {
     /* content: "";
@@ -94,8 +98,6 @@
     /* background: url("../../images/dkmodel.png") no-repeat right center; */
     /* background-size: contain; */
   }
-}
-@media only screen and (min-width: 780px) and (max-width: 1080px) {
   .e-block--league.solo:after {
     /* content: "";
     position: absolute; */
@@ -107,8 +109,7 @@
     /* center; */
     /* background-size: contain; */
   }
-}
-@media only screen and(min-width: 780px) and (max-width: 1080px) {
+
   .e-block--league.pro:after {
     /* content: ""; */
     /* position: absolute; */
@@ -118,6 +119,11 @@
     right: -40px;
     /* background: url("../../images/invoker2.png") no-repeat right center; */
     /* background-size: contain; */
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .e-block--league {
+    margin-right: 24px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -130,8 +136,7 @@
     right: 0;
     /* background: url("../../images/dkmodel.png") no-repeat right center; */
   }
-}
-@media screen and (min-width: 1280px) {
+
   .e-block--league.solo:after {
     /* content: "";
     position: absolute; */
@@ -143,8 +148,7 @@
     /* center; */
     /* background-size: contain; */
   }
-}
-@media screen and (min-width: 1280px) {
+
   .e-block--league.pro:after {
     /* content: "";
     position: absolute; */
@@ -199,9 +203,9 @@
   margin: auto;
 }
 .s-three .t-title-h3 {
-  padding: 26px 40px 22px 40px;
+  /* padding: 26px 40px 22px 40px; */
   margin: 20px 0;
-  font-size: 58px;
+  font-size: 24px;
 }
 /* .s-three .nonpro {
 } */
@@ -314,8 +318,8 @@
   background-size: 100%;
 }
 .e-block--shcedule.left {
-  width: 480px;
-  padding-right: 120px;
+  /* width: 0px; */
+  padding-right: 20px;
 }
 
 .e-block--shcedule.right {
@@ -331,6 +335,16 @@
 } */
 
 @media only screen and (min-width: 1080px) {
+  .s-three .t-title-h3 {
+    /* padding: 26px 40px 22px 40px;
+  margin: 20px 0; */
+    font-size: 58px;
+  }
+  .e-block--shcedule.left {
+    width: 480px;
+    padding-right: 120px;
+  }
+
   .e-block--shcedule .icon-swords.right-top:after {
     left: 200px;
   }
@@ -393,13 +407,13 @@
 }
 /* prize section */
 .e-block--prize {
-  width: 405px;
+  width: 305px;
   height: 487px;
   padding: 23px 28px;
   position: relative;
 }
 .e-block--prize-solo {
-  width: 405px;
+  width: 305px;
   height: 180px;
   padding: 23px 28px;
   position: relative;
@@ -450,7 +464,7 @@
   content: "";
   top: 0;
   right: 0;
-  width: 405px;
+  width: 305px;
   height: 180px;
   position: absolute;
   background: url("../../images/prize_corner_XL.svg") no-repeat center center;
@@ -462,7 +476,7 @@
 .icon-prize-1st {
   top: 130px;
   right: -26px;
-  width: 400px;
+  width: 300px;
   height: 285px;
   z-index: 1;
   background: url("../../images/prize_1st_150k.svg") no-repeat center center;
@@ -471,22 +485,25 @@
   text-align: center;
   bottom: -150px;
   left: -11px;
-  width: 425px;
+  width: 325px;
   height: 165px;
   padding-top: 100px;
   background: url("../../images/icon_prize_1st-additional.svg") no-repeat left
     center;
 }
+
 .icon-prize--additional.solo {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 650px;
+  width: 300px;
   height: 240px;
   background: url("../../images/top5.svg") no-repeat center center;
 }
+
 .icon-prize-1st.solo {
   top: -62px;
+  right: -50px;
   width: 200px;
   height: 220px;
   padding-top: 100px;
@@ -494,7 +511,7 @@
 }
 .icon-prize-2nd {
   top: 130px;
-  right: 20px;
+  /* right: -50px; */
   width: 265px;
   height: 275px;
   z-index: 10;
@@ -502,6 +519,7 @@
 }
 .icon-prize-2nd.solo {
   top: -62px;
+  right: -50px;
   width: 200px;
   height: 220px;
   background: url("../../images/icon_prize_solo_3.svg") no-repeat center center;
@@ -516,6 +534,7 @@
 }
 .icon-prize-3rd.solo {
   top: -62px;
+  /* right: -50px; */
   width: 200px;
   height: 220px;
   background: url("../../images/icon_prize_solo_2.svg") no-repeat center center;
@@ -529,7 +548,48 @@
   z-index: 10;
   background: url("../../images/prize-4th-place.svg") no-repeat center center;
 }
+.flex-order:nth-of-type(2) {
+  order: -1;
+}
+@media only screen and (min-width: 1080px) {
+  /* prize section */
+
+  .flex-order:nth-of-type(2) {
+    order: 0;
+  }
+  .icon-prize-1st.solo {
+    right: -26px;
+  }
+  .icon-prize-2nd.solo,
+  .icon-prize-3rd.solo {
+    right: 35px;
+  }
+  .e-block--prize {
+    width: 405px;
+    height: 487px;
+    padding: 23px 28px;
+    position: relative;
+  }
+  .e-block--prize-solo {
+    width: 405px;
+    height: 180px;
+    padding: 23px 28px;
+    position: relative;
+  }
+  .e-block--prize-solo.small {
+    width: 280px;
+  }
+  .icon-prize--additional.solo {
+    /* top: 0;
+  left: 50%;
+  transform: translateX(-50%); */
+    width: 650px;
+    /* height: 240px; */
+    /* background: url("../../images/top5.svg") no-repeat center center; */
+  }
+}
 /* partners */
+
 .partner-maincast {
   width: 259px;
   height: 53px;
