@@ -44,6 +44,11 @@
   flex-direction: column;
   align-items: center;
 }
+.d-flex--column-center-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .d-flex--column-mobile {
   display: flex;
   flex-direction: column;
@@ -59,6 +64,11 @@
   }
   .d-flex--column-center {
     display: flex;
+    flex-direction: row;
+  }
+  .d-flex--column-center-mobile {
+    display: flex;
+    justify-content: center;
     flex-direction: row;
   }
   .d-flex--column-mobile {
