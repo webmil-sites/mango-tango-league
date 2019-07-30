@@ -21,8 +21,17 @@
     rgba(255, 0, 77, 0) 100%
   );
 }
+
 .color-t-yellow {
   color: #f3f744;
+}
+.color-t-yellow--mobile {
+  color: #f3f744;
+}
+@media only screen and (min-width: 1080px) {
+  .color-t-yellow--mobile {
+    color: #fff;
+  }
 }
 .color-t-vivid-red {
   color: #ec0c4b;
