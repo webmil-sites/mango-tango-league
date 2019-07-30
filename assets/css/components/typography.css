@@ -16,6 +16,14 @@ a {
 .t-center {
   text-align: center;
 }
+.t-center-mobile {
+  text-align: center;
+}
+@media only screen and (min-width: 1080px) {
+  .t-center-mobile {
+    text-align: left;
+  }
+}
 .t-uppercase {
   text-transform: uppercase;
 }

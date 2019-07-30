@@ -39,10 +39,10 @@
   </head>
   <body>
     <div class="o-page-container">
-      <header class="header o-container d-flex--sp-btw">
-        <a href="#" class="logo"></a>
+      <header class="header o-container d-flex--sp-btw t-center-mobile">
+        <a href="#" class="logo margin-auto-mobile"></a>
         <a
-          class="button-action"
+          class="button-action display-mobile-none"
           href="https://www.faceit.com/en/organizers/1fefceea-f4f9-4667-937e-6a9788890141/Maincast"
           onclick="dataLayer.push({
                 'clickCounter': 1,
@@ -51,7 +51,7 @@
           >Принять участие
         </a>
       </header>
-      <section class="o-container--section s-one d-flex">
+      <section class="o-container--section s-one d-flex t-center-mobile">
         <div class="e-block--event-info c-t-white d-flex---column">
           <h1 class="t-title">Mango Tango League</h1>
           <h3 class="t-subtitle">Стань легендой киберспорта СНГ</h3>
@@ -66,9 +66,12 @@
           </a>
           <h2 class="t-event-prize t-title-h3">
             $12 000 <br />+ <br />
-            1000000 Faceit Points
+            1 000 000 Faceit Points
           </h2>
           <p class="t-event-date">1 августа - 1 декабря</p>
+          <h3 class="color-t-vivid-red f-size-24">
+            Стань легендой киберспорта! <br />Матчмейкинг, который мы заслужили!
+          </h3>
         </div>
         <!-- <div class="e-block--video-container"></div> -->
       </section>
@@ -78,8 +81,8 @@
           <div class="logo"></div>
           <h3 class="t-title-h4 c-bg-league--red t-bold">Solo League</h3>
           <ul class="t-list c-t-white position-rel-z">
-            <li>1x1</li>
-            <li>SOLO MID</li>
+            <li>Solo 5x5</li>
+            <li>Captains Mode</li>
           </ul>
           <a
             href="https://www.faceit.com/en/hub/524a6e60-bde4-455f-8823-311f21392beb/MTL%201x1%20Solo%20Mid%20Division"
@@ -132,21 +135,27 @@
         <div id="button-toogle-nonpro" class="nonpro t-center column-width-50">
           <div class="logo"></div>
           <h3 class="t-title-h3 color-t-yellow t-bold">Non-pro <br />League</h3>
-          <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
+          <!-- <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3> -->
         </div>
         <div id="button-toogle-solo" class="solo t-center column-width-50">
           <div class="logo"></div>
           <h3 class="t-title-h3 t-bold color-t-vivid-red">Solo <br />League</h3>
+          <!-- <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3> -->
+        </div>
+      </section>
+
+      <section class="o-container--section s-three d-flex--center">
+        <div id="button-toogle-solo" class="solo t-center">
           <h3 class="t-title-h3 c-t-white ">І СЕЗОН</h3>
         </div>
       </section>
 
       <section
-        class="o-container--section s-four margin-b-50 d-flex--center d-flex--column-mobile"
+        class="o-container--section s-four margin-b-50 d-flex--center d-flex--column-mobile "
       >
         <div
           id="content-nonpro"
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 d-align-items--end"
+          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 min-height-800 padding-t-50 d-align-items--end"
         >
           <div class="e-block--shcedule left">
             <h4 class="color-t-yellow icon-item icon-ammo">1-30 августа</h4>
@@ -158,33 +167,17 @@
               </li>
             </ul>
             <ul class="t-list-bulletless icon-item icon-ammo">
-              <li><span>Solo; 5x5 Captains Mode</span></li>
+              <li><span>Team; 5x5 Capitans Mode</span></li>
             </ul>
           </div>
-
-          <div class="e-block--shcedule left margin-t-50">
+          <div class="e-block--shcedule left margin-t--150">
             <h4 class="color-t-yellow">31 августа</h4>
             <p class="icon-item icon-ammo color-t-yellow">
               Распределение на дивизионы:
             </p>
-            <ul
-              class="t-list-bulletless icon-item icon-godlike left position-rel"
-            >
-              <li>Божество</li>
-              <li>Team, Solo; 5x5 Captains Mode</li>
-            </ul>
-            <ul
-              class="t-list-bulletless icon-item icon-legend left position-rel"
-            >
-              <li>Легенда</li>
-              <li>Team, Solo; 5x5 Captains Mode</li>
-            </ul>
-
-            <ul
-              class="t-list-bulletless icon-item icon-knight left position-rel"
-            >
-              <li>Рыцарь</li>
-              <li>Team, Solo; 5x5 Captains Mode</li>
+            <ul class="t-list-bulletless left position-rel">
+              <li>Дивизион А - ТОП 16 команд</li>
+              <li>Дивизион В - ТОП 32 команд</li>
             </ul>
           </div>
 
@@ -201,13 +194,39 @@
 
         <div
           id="content-solo"
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 js-hide"
+          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 padding-t-50 min-height-800 js-hide"
         >
           <div class="e-block--shcedule right">
             <div class="o-text-container">
               <h4 class="color-t-vivid-red">1-30 августа</h4>
               <ul class="t-list-bulletless icon-item icon-swords right">
                 <li>СТАРТ І Сезона</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="e-block--shcedule right division margin-t-165 position-abs"
+          >
+            <div class="o-text-container">
+              <ul
+                class="t-list-bulletless icon-item icon-godlike left position-rel"
+              >
+                <li>Божество</li>
+                <li>Solo; 5x5 Captains Mode</li>
+              </ul>
+              <ul
+                class="t-list-bulletless icon-item icon-legend left position-rel"
+              >
+                <li>Легенда</li>
+                <li>Solo; 5x5 Captains Mode</li>
+              </ul>
+
+              <ul
+                class="t-list-bulletless icon-item icon-knight left position-rel"
+              >
+                <li>Рыцарь</li>
+                <li>Team; 5x5 Captains Mode</li>
               </ul>
             </div>
           </div>
@@ -252,7 +271,7 @@
           <div class="e-block--shcedule left">
             <h4 class="color-t-yellow">1 ноября</h4>
             <ul class="t-list-bulletless icon-item icon-lc yellow">
-              <li><span>Награждение самых активных игрков</span></li>
+              <li><span>Награждение самых активных игроков</span></li>
             </ul>
           </div>
 
@@ -271,7 +290,7 @@
 
         <div
           id="content-solo-bottom"
-          class="o-container--shedule d-flex--column-sp-btw position-rel column-width-50 js-hide"
+          class="o-container--shedule d-flex--column-sp-btw position-rel height-480 column-width-50 js-hide"
         >
           <div class="e-block--shcedule right">
             <div class="o-text-container">
@@ -291,7 +310,7 @@
       >
         <div class="nonpro t-center">
           <div class="icon-item icon-lc-xl yellow"></div>
-          <h3 class="t-title-h3 color-t-yellow">ПРИЗЫ NON-PRO LEGUE</h3>
+          <h3 class="t-title-h3 color-t-yellow">ПРИЗЫ NON-PRO LEAGUE</h3>
         </div>
       </section>
 
@@ -324,7 +343,8 @@
           <div class="icon-prize-1st position-abs"></div>
           <div class="icon-prize--additional position-abs">
             <p class="font-size-30">
-              топ-5 игроков 1 Сезона получают инвайты в Про Лигу
+              ТОП5 соло лиги будут приглашены в PRO LEAGUE перенести в Призы
+              Solo
             </p>
           </div>
         </div>
@@ -441,7 +461,7 @@
         class="o-container--section s-three d-flex--center position-rel margin-b-130"
       >
         <div class="nonpro t-center">
-          <h3 class="t-title-h3 color-t-vivid-red">Партнеры лиги</h3>
+          <h3 class="t-title-h3 color-t-vivid-red">Организаторы лиги</h3>
           <a
             href="https://www.maincast.com/"
             class="partner-maincast"
@@ -463,7 +483,7 @@
     </div>
     <footer class="footer">
       <div class="o-container--footer d-flex--sp-btw">
-        <a href="#" class="logo"></a>
+        <a href="#" class="logo display-mobile-none"></a>
         <nav class="e-block-social-sprite">
           <a
             href="https://discord.gg/SSxY2Kw"
@@ -515,7 +535,9 @@
           ></a>
         </nav>
       </div>
-      <div class="o-container--footer d-flex--sp-btw padding-none">
+      <div
+        class="o-container--footer d-flex--sp-btw padding-none display-mobile-none"
+      >
         <nav class="e-nav-footer-faq c-t-footer">
           <a href="#" class="item">
             Политика cookies
