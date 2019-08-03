@@ -1,15 +1,12 @@
-/* .e-block--event-info > .button-action {
-  align-self: flex-start;
-} */
-.e-block--event-info > .button-action {
-  align-self: flex-start;
-}
 .e-block--event-info {
   padding: 60px 0;
 }
 @media screen and (min-width: 1080px) {
   .e-block--event-info {
     padding: 60px 75px 0px 150px;
+  }
+  .e-block--event-info > .button-action {
+    align-self: flex-start;
   }
 }
 .e-block--video-container {
@@ -279,8 +276,8 @@
   background: url("../../images/icon_swords.svg") no-repeat center center;
 }
 .icon-swords.sword-dark:after {
-  bottom: 25px;
-  left: 5px;
+  bottom: 27px;
+  left: 0;
   background: url("../../images/Icon_swords_dark.svg") no-repeat center center;
 }
 
@@ -537,14 +534,6 @@
   height: 240px;
   background: url("../../images/top5.svg") no-repeat center center;
 }
-.icon-prize-main {
-  top: -42px;
-  left: 100px;
-  width: 180px;
-  height: 124px;
-  z-index: 10;
-  background: url("../../images/icon_prize_1M_main.svg") no-repeat center center;
-}
 
 .icon-prize-1st.solo {
   top: -62px;
@@ -599,6 +588,15 @@
   order: -1;
 }
 @media only screen and (min-width: 1080px) {
+  .icon-prize-main {
+    top: -42px;
+    left: 100px;
+    width: 180px;
+    height: 124px;
+    z-index: 10;
+    background: url("../../images/icon_prize_1M_main.svg") no-repeat center
+      center;
+  }
   .icon-prize-1st {
     top: 130px;
     right: 1px;
@@ -665,14 +663,6 @@
     padding-top: 100px;
     background: url("../../images/icon_prize_1st-additional.svg") no-repeat
       center center;
-  }
-  .icon-prize--additional.solo {
-    /* top: 0;
-  left: 50%;
-  transform: translateX(-50%); */
-    /* width: 650px; */
-    /* height: 240px; */
-    /* background: url("../../images/top5.svg") no-repeat center center; */
   }
   .icon-prize--additional.solo {
     top: 0;
