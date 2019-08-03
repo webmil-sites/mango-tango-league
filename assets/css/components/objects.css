@@ -37,6 +37,6 @@
 }
 .o-text-container {
   /* width: 373px; */
-  width: 343px;
+  max-width: 343px;
   text-align: left;
 }
