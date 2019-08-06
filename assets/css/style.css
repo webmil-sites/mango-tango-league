@@ -11,6 +11,9 @@
 @import "./components/colors.css";
 @import "./components/font.css";
 
+html {
+  overflow-x: hidden;
+}
 .d-flex {
   display: flex;
 }
