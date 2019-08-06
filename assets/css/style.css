@@ -134,6 +134,9 @@ body {
 .margin-t-20 {
   margin-top: 20px;
 }
+.margin-t-prize2-165 {
+  margin-top: 165px;
+}
 .margin-t-165 {
   margin-top: 165px;
 }
@@ -200,12 +203,31 @@ body {
 .display-mobile-none {
   display: none;
 }
+.display-prize-none {
+  display: none;
+}
+.display-prize-mobile {
+  display: block;
+}
+
 @media only screen and (min-width: 580px) {
   .display-mobile-none {
     display: block;
   }
   .margin-auto-mobile {
     margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1080) {
+  .display-desktop-none {
+    display: block;
+  }
+  .display-prize-none {
+    display: block;
+  }
+  .margin-t-prize2-165 {
+    margin-top: 165px;
   }
 }
 /* js */
