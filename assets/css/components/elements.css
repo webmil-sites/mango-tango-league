@@ -547,12 +547,13 @@
   background: url("../../images/icon_prize_solo_1.svg") no-repeat center center;
 }
 .icon-prize-2nd {
-  top: 130px;
-  /* right: -50px; */
-  width: 265px;
+  top: 100px;
+  right: 0px;
+  width: 225px;
   height: 275px;
   z-index: 10;
   background: url("../../images/prize_2nd-100k.svg") no-repeat center center;
+  background-size: 100%;
 }
 .icon-prize-2nd.solo {
   /* top: -62px; */
@@ -599,6 +600,17 @@
 .flex-order:nth-of-type(2) {
   order: -1;
 }
+
+/* @media only screen and (min-width: 580px) {
+  .icon-prize-2nd {
+    top: 130px;
+    right: 20px;
+    width: 265px;
+    height: 275px;
+    z-index: 10;
+    background: url("../../images/prize_2nd-100k.svg") no-repeat center center;
+  }
+} */
 @media only screen and (min-width: 1080px) {
   .icon-prize-main {
     top: -42px;
