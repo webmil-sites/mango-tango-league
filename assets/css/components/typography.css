@@ -76,17 +76,33 @@ a {
   position: relative;
   margin-top: 157px;
   margin-left: -28px;
+  /* height: 200px; */
 }
 .t-bg--prize-txt:after {
   content: "";
   position: absolute;
-  width: 251px;
+  width: 305px;
+  height: 80px;
   top: 0;
-  left: 1px;
-  height: 60px;
+  left: -1px;
   z-index: 9;
-  background: url("../../images/prize-1st-plzce-text-bg.svg") no-repeat center
+  background: url("../../images/prize_1st_text_bg-mobile.svg") no-repeat center
     center;
+  background-size: 100%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .t-bg--prize-txt:after {
+    content: "";
+    position: absolute;
+    width: 251px;
+    top: 0;
+    left: 1px;
+    height: 60px;
+    z-index: 9;
+    background: url("../../images/prize-1st-plzce-text-bg.svg") no-repeat center
+      center;
+  }
 }
 
 .t-max-width {
@@ -104,14 +120,20 @@ a {
   position: relative;
   z-index: 10;
 }
+.t-bootcamp:first-of-type {
+  padding: 19px 0 19px 82px;
+}
 .t-bootcamp {
-  padding: 5px 28px;
+  padding: 19px 28px;
 }
 .e-block--prize h4 {
   margin: 20px;
 }
 
 @media only screen and (min-width: 1080px) {
+  .t-bootcamp {
+    padding: 5px 28px;
+  }
   .t-title {
     font-size: 58px;
   }
