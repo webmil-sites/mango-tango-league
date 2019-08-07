@@ -259,6 +259,9 @@ body {
     opacity: 0;
     display: none;
   }
+  .js-hide .button-schedule::after {
+    content: none;
+  }
 }
 .js-show {
   display: flex;

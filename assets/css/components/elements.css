@@ -16,7 +16,11 @@
   background: url("../../images/place_holder_video.jpg") no-repeat center center;
 }
 .e-block-social-sprite {
-  max-width: 420px;
+  /* max-width: 420px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 280px; */
+  justify-content: center;
 }
 .e-nav-footer .item,
 .e-nav-footer-faq .item {
@@ -431,6 +435,10 @@
       rgba(239, 255, 49, 0) 95.16%
     );
   }
+  .e-block-social-sprite {
+    max-width: 420px;
+    display: block;
+  }
 }
 /* prize section */
 .e-block--prize {
@@ -566,10 +574,11 @@
 .icon-prize-3rd {
   top: 130px;
   right: 35px;
-  width: 149px;
+  width: 120px;
   height: 125px;
   z-index: 10;
   background: url("../../images/icon_prize_75k.svg") no-repeat center center;
+  background-size: 100%;
 }
 .icon-prize-3rd.solo {
   /* top: -62px; */
@@ -719,7 +728,7 @@
 .partner-maincast {
   width: 259px;
   height: 53px;
-  margin-right: 100px;
+  margin-bottom: 20px;
 }
 .partner-faceit {
   width: 253px;
@@ -748,4 +757,15 @@
   height: 56px;
   background-position-x: -400px;
   background-position-y: -1px;
+}
+
+@media only screen and (min-width: 540px) {
+  .partner-maincast {
+    margin: 0 100px 0 0;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .partner-maincast {
+    margin: 0 100px 0 0;
+  }
 }
