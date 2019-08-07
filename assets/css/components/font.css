@@ -28,6 +28,9 @@ body {
 .f-size-64 {
   font-size: 64px;
 }
+.f-size-36-64 {
+  font-size: 36px;
+}
 .f-size-36 {
   font-size: 36px;
 }
@@ -36,4 +39,10 @@ body {
 }
 .font-size-30 {
   font-size: 30px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .f-size-36-64 {
+    font-size: 64px;
+  }
 }

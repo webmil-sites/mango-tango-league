@@ -567,7 +567,7 @@
   top: 130px;
   right: 35px;
   width: 149px;
-  height: 124px;
+  height: 125px;
   z-index: 10;
   background: url("../../images/icon_prize_75k.svg") no-repeat center center;
 }
@@ -638,7 +638,14 @@
     z-index: 10;
     background: url("../../images/prize_2nd-100k.svg") no-repeat center center;
   }
-
+  .icon-prize-3rd {
+    top: 130px;
+    right: 35px;
+    width: 149px;
+    height: 125px;
+    z-index: 10;
+    background: url("../../images/icon_prize_75k.svg") no-repeat center center;
+  }
   .icon-prize-1st.solo,
   .icon-prize-2nd.solo,
   .icon-prize-3rd.solo {
