@@ -6,6 +6,9 @@ const contentSolo = document.getElementById("content-solo");
 const contentSoloBottom = document.getElementById("content-solo-bottom");
 
 buttonNonPro.addEventListener("click", function() {
+  buttonSolo.classList.remove("button-schedule-solo");
+  buttonNonPro.classList.add("button-schedule");
+
   // contentNonPro.style.display = (content.dataset.toggled ^= 1) ? "flex" : "none";
   if (contentNonPro.classList.contains("js-hide")) {
     contentSolo.classList.add("js-hide");
@@ -17,7 +20,11 @@ buttonNonPro.addEventListener("click", function() {
     contentNonProBottom.classList.add("js-show");
   }
 });
+
 buttonSolo.addEventListener("click", function() {
+  buttonSolo.classList.add("button-schedule-solo");
+  buttonNonPro.classList.remove("button-schedule");
+
   // content-solo.style.display = (content.dataset.toggled ^= 1) ? "flex" : "none";
   if (contentSolo.classList.contains("js-hide")) {
     contentNonPro.classList.add("js-hide");
