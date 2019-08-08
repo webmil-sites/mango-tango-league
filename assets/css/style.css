@@ -59,6 +59,11 @@ body {
   align-items: center;
 }
 @media screen and (min-width: 1080px) {
+  .d-flex--column-sp-btw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
   .d-flex--center-mobile {
     display: flex;
     justify-content: flex-start;
@@ -109,12 +114,18 @@ body {
 .margin-auto-mobile {
   margin: auto;
 }
+.margin-t-500-80 {
+  margin-top: 500px;
+}
 @media only screen and (min-width: 1080px) {
   .margin-t-360 {
     margin-top: 360px;
   }
   .loho-hide-mobile {
     display: block;
+  }
+  .margin-t-500-80 {
+    margin-top: 80px;
   }
 }
 .margin-t-80 {
