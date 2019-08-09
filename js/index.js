@@ -9,7 +9,20 @@ buttonNonPro.addEventListener("click", function() {
   buttonSolo.classList.remove("button-schedule-solo");
   buttonNonPro.classList.add("button-schedule");
 
-  // contentNonPro.style.display = (content.dataset.toggled ^= 1) ? "flex" : "none";
+  document
+    .getElementById("headlineColor")
+    .classList.remove("color-t-vivid-red");
+  document
+    .getElementById("headlineColor")
+    .classList.add("color-t-yellow--mobile");
+
+  document
+    .getElementById("paragraphColor")
+    .classList.add("color-t-yellow--mobile");
+  document
+    .getElementById("paragraphColor")
+    .classList.remove("color-t-vivid-red");
+
   if (contentNonPro.classList.contains("js-hide")) {
     contentSolo.classList.add("js-hide");
     contentSolo.classList.remove("js-show");
@@ -25,7 +38,16 @@ buttonSolo.addEventListener("click", function() {
   buttonSolo.classList.add("button-schedule-solo");
   buttonNonPro.classList.remove("button-schedule");
 
-  // content-solo.style.display = (content.dataset.toggled ^= 1) ? "flex" : "none";
+  document
+    .getElementById("headlineColor")
+    .classList.remove("color-t-yellow--mobile");
+  document.getElementById("headlineColor").classList.add("color-t-vivid-red");
+
+  document
+    .getElementById("paragraphColor")
+    .classList.remove("color-t-yellow--mobile");
+  document.getElementById("paragraphColor").classList.add("color-t-vivid-red");
+
   if (contentSolo.classList.contains("js-hide")) {
     contentNonPro.classList.add("js-hide");
     contentNonPro.classList.remove("js-show");

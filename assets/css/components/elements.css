@@ -329,6 +329,20 @@
   /* width: 0px; */
   padding-right: 20px;
 }
+.e-block--shcedule.left:after {
+  content: "";
+  width: 1px;
+  height: 100px;
+  position: absolute;
+  bottom: -100px;
+  background: linear-gradient(
+    179.99deg,
+    rgba(239, 255, 49, 0) 0%,
+    #efff31 32.29%,
+    #efff31 67.19%,
+    rgba(239, 255, 49, 0) 95.16%
+  );
+}
 
 .e-block--shcedule.right {
   padding-left: 60px;
