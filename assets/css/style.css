@@ -62,7 +62,7 @@ body {
   .d-flex--column-sp-btw {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .d-flex--center-mobile {
     display: flex;
