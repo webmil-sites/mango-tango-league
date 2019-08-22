@@ -31,7 +31,7 @@
   margin-right: 0;
 }
 .e-block--league {
-  width: calc(100% / 3);
+  width: 100%;
   height: 483px;
   margin-bottom: 35px;
   position: relative;
@@ -52,6 +52,11 @@
 }
 
 @media only screen and (min-width: 620px) {
+  .e-block--league {
+    width: calc(100% / 3);
+    min-width: 350px;
+    max-width: 100%;
+  }
   .e-block--league.solo:after {
     content: "";
     position: absolute;
