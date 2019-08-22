@@ -22,6 +22,11 @@
   /* max-width: 280px; */
   justify-content: center;
 }
+@media screen and (max-width: 580px) {
+  .e-block-social-sprite {
+    width: 100%;
+  }
+}
 .e-nav-footer .item,
 .e-nav-footer-faq .item {
   margin-right: 20px;
