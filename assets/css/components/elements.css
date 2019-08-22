@@ -3,7 +3,7 @@
 }
 @media screen and (min-width: 1080px) {
   .e-block--event-info {
-    padding: 60px 75px 0px 150px;
+    padding: 60px 75px 0px 0px;
   }
   .e-block--event-info > .button-action {
     align-self: flex-start;
@@ -31,7 +31,7 @@
   margin-right: 0;
 }
 .e-block--league {
-  width: 300px;
+  width: calc(100% / 3);
   height: 483px;
   margin-bottom: 35px;
   position: relative;
@@ -52,9 +52,6 @@
 }
 
 @media only screen and (min-width: 620px) {
-  .e-block--league {
-    width: 405px;
-  }
   .e-block--league.solo:after {
     content: "";
     position: absolute;
