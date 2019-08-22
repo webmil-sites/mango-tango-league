@@ -749,7 +749,6 @@
 .partner-maincast {
   width: 259px;
   height: 53px;
-  margin-bottom: 20px;
 }
 .partner-faceit {
   width: 253px;
@@ -779,10 +778,9 @@
   background-position-x: -400px;
   background-position-y: -1px;
 }
-
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 620px) {
   .partner-maincast {
-    margin: 0 100px 0 0;
+    margin: 0 40px 0 0;
   }
 }
 @media only screen and (min-width: 1080px) {
