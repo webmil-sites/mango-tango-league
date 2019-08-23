@@ -16,12 +16,19 @@
   position: relative;
   display: inline-block;
 }
+@media screen and (max-width: 580px) {
+  .social-icon {
+    margin-right: 0;
+    transform: scale(0.7);
+  }
+}
 .social-icon:last-of-type {
   margin-right: 0;
 }
 .social-icon:after {
   content: "";
   top: 0;
+  height: 45px;
   position: absolute;
   background: url("../../images/social.svg") no-repeat center center;
 }
@@ -38,13 +45,11 @@
 }
 .social-icon.union:after {
   width: 40px;
-  height: 45px;
   left: 0;
   background-position-x: 0px;
 }
 .social-icon.union:hover:after {
   width: 40px;
-  height: 45px;
   left: 0;
   background-position-x: 0px;
 }
@@ -53,12 +58,10 @@
 }
 .social-icon.vk:after {
   width: 40px;
-  height: 45px;
   background-position-x: -65px;
 }
 .social-icon.vk:hover:after {
   width: 40px;
-  height: 45px;
   background-position-x: -65px;
 }
 .social-icon.twitch {
@@ -66,12 +69,10 @@
 }
 .social-icon.twitch:after {
   width: 44px;
-  height: 45px;
   background-position-x: -130px;
 }
 .social-icon.twitch:hover:after {
   width: 44px;
-  height: 45px;
   background-position-x: -130px;
 }
 .social-icon.twitter {
@@ -79,12 +80,10 @@
 }
 .social-icon.twitter:after {
   width: 40px;
-  height: 45px;
   background-position-x: -198px;
 }
 .social-icon.twitter:hover:after {
   width: 40px;
-  height: 45px;
   background-position-x: -198px;
 }
 .social-icon.instagram {
@@ -92,12 +91,10 @@
 }
 .social-icon.instagram:after {
   width: 40px;
-  height: 45px;
   background-position-x: -263px;
 }
 .social-icon.instagram:hover:after {
   width: 40px;
-  height: 45px;
   background-position-x: -263px;
 }
 .social-icon.youtube {
@@ -105,11 +102,9 @@
 }
 .social-icon.youtube:after {
   width: 58px;
-  height: 45px;
   background-position-x: -328px;
 }
 .social-icon.youtube:hover:after {
   width: 58px;
-  height: 45px;
   background-position-x: -328px;
 }

@@ -2,11 +2,17 @@
   width: 100%;
   /* min-width: 1400px; */
   height: 100%;
-  padding: 0 25px;
+  padding: 0 25px 1px 25px;
   /* background: url("../../images/bg_full.jpg") no-repeat center center; */
   background: url("../../images/bg.jpg") no-repeat center top;
   background-size: cover;
   /* background-color: #0f0628; */
+}
+@media screen and (max-width: 1080px) {
+  .o-page-container {
+    background-position: top 0 right 0;
+    background-size: 230vw;
+  }
 }
 .o-container {
   max-width: 1772px;

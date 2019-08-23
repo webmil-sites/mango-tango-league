@@ -3,7 +3,7 @@
 }
 @media screen and (min-width: 1080px) {
   .e-block--event-info {
-    padding: 60px 75px 0px 150px;
+    padding: 60px 75px 0px 0px;
   }
   .e-block--event-info > .button-action {
     align-self: flex-start;
@@ -22,6 +22,11 @@
   /* max-width: 280px; */
   justify-content: center;
 }
+@media screen and (max-width: 580px) {
+  .e-block-social-sprite {
+    width: 100%;
+  }
+}
 .e-nav-footer .item,
 .e-nav-footer-faq .item {
   margin-right: 20px;
@@ -31,7 +36,7 @@
   margin-right: 0;
 }
 .e-block--league {
-  width: 300px;
+  width: 100%;
   height: 483px;
   margin-bottom: 35px;
   position: relative;
@@ -53,7 +58,9 @@
 
 @media only screen and (min-width: 620px) {
   .e-block--league {
-    width: 405px;
+    width: calc(100% / 3);
+    min-width: 350px;
+    max-width: 100%;
   }
   .e-block--league.solo:after {
     content: "";
@@ -206,7 +213,7 @@
 .s-three .t-title-h3 {
   /* padding: 26px 40px 22px 40px; */
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 40px;
 }
 /* .s-three .nonpro {
 } */
@@ -742,7 +749,6 @@
 .partner-maincast {
   width: 259px;
   height: 53px;
-  margin-bottom: 20px;
 }
 .partner-faceit {
   width: 253px;
@@ -772,10 +778,9 @@
   background-position-x: -400px;
   background-position-y: -1px;
 }
-
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 620px) {
   .partner-maincast {
-    margin: 0 100px 0 0;
+    margin: 0 40px 0 0;
   }
 }
 @media only screen and (min-width: 1080px) {
