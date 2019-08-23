@@ -8,6 +8,13 @@
   background-size: cover;
   /* background-color: #0f0628; */
 }
+@media screen and (max-width: 1080px) {
+  .o-page-container {
+    background-position: top 0 right 0;
+    background-size: 230vw;
+    background-repeat: repeat-y;
+  }
+}
 .o-container {
   max-width: 1772px;
   margin: auto;
