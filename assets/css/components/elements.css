@@ -648,6 +648,21 @@
 .flex-order:nth-of-type(2) {
   order: -1;
 }
+.prize-tooltip {
+  position: relative;
+  transition: all .3s ease;
+}
+.prize-tooltip:hover::after {
+  content: "По количеству сыгранных матчей";
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: rgba(256, 256, 256, 0.2);
+}
 
 /* @media only screen and (min-width: 580px) {
   .icon-prize-2nd {
