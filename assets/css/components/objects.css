@@ -36,6 +36,7 @@
 }
 .o-container--section.s-two {
   padding-bottom: 250px;
+  position: relative;
 }
 .o-container--shedule {
   max-width: 1020px;

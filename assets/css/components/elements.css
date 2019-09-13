@@ -202,6 +202,24 @@
   border: 2px solid #a1b6ff;
   background: #250e4a;
 }
+.s-two__our-discord {
+  color: #ff7f7e;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.s-two__our-discord .s-two__icon {
+  height: 45px;
+  background: url(../../images/social.svg) no-repeat center center;
+  width: 40px;
+  background-position-x: 0px;
+  margin-right: 10px;
+}
+
 /* .s-three {
 
 } */
