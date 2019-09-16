@@ -1,3 +1,7 @@
+.s-one {
+  display: flex;
+  align-items: center;
+}
 .e-block--event-info {
   padding: 60px 0;
 }
@@ -13,7 +17,13 @@
   width: 770px;
   height: 462px;
   box-shadow: 0px 4px 200px rgba(255, 0, 107, 0.48);
-  background: url("../../images/place_holder_video.jpg") no-repeat center center;
+  margin-top: 65px;
+  /* background: url("../../images/place_holder_video.jpg") no-repeat center center; */
+}
+@media (max-width: 1080px) {
+  .e-block--video-container {
+    display: none;
+  }
 }
 .e-block-social-sprite {
   /* max-width: 420px; */
@@ -202,6 +212,24 @@
   border: 2px solid #a1b6ff;
   background: #250e4a;
 }
+.s-two__our-discord {
+  color: #ff7f7e;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+.s-two__our-discord .s-two__icon {
+  height: 45px;
+  background: url(../../images/social.svg) no-repeat center center;
+  width: 40px;
+  background-position-x: 0px;
+  margin-right: 10px;
+}
+
 /* .s-three {
 
 } */
@@ -629,6 +657,21 @@
 }
 .flex-order:nth-of-type(2) {
   order: -1;
+}
+.prize-tooltip {
+  position: relative;
+  transition: all .3s ease;
+}
+.prize-tooltip:hover::after {
+  content: "По количеству сыгранных матчей";
+  display: block;
+  padding: 10px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: rgba(256, 256, 256, 0.2);
 }
 
 /* @media only screen and (min-width: 580px) {
