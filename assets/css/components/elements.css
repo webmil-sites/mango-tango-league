@@ -1,3 +1,7 @@
+.s-one {
+  display: flex;
+  align-items: center;
+}
 .e-block--event-info {
   padding: 60px 0;
 }
@@ -13,7 +17,13 @@
   width: 770px;
   height: 462px;
   box-shadow: 0px 4px 200px rgba(255, 0, 107, 0.48);
+  margin-top: 65px;
   /* background: url("../../images/place_holder_video.jpg") no-repeat center center; */
+}
+@media (max-width: 1080px) {
+  .e-block--video-container {
+    display: none;
+  }
 }
 .e-block-social-sprite {
   /* max-width: 420px; */

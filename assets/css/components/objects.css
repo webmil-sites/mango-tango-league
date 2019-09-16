@@ -1,12 +1,9 @@
 .o-page-container {
   width: 100%;
-  /* min-width: 1400px; */
   height: 100%;
   padding: 0 25px 1px 25px;
-  /* background: url("../../images/bg_full.jpg") no-repeat center center; */
-  background: url("../../images/bg.jpg") no-repeat center top;
+  background: url("../../images/bg-big.jpg") no-repeat center top;
   background-size: cover;
-  /* background-color: #0f0628; */
 }
 @media screen and (max-width: 1080px) {
   .o-page-container {
