@@ -250,6 +250,12 @@
   position: relative;
   padding-left: 60px;
 }
+@media (max-width: 1080px) {
+  .e-block--shcedule.end-of-season {
+    position: absolute;
+    top: 500px;
+  }
+}
 .e-block--shcedule,
 .e-block--shcedule p {
   font-size: 24px;
