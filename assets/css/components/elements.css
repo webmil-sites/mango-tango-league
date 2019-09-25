@@ -56,7 +56,6 @@
   background-position: 80px 30px;
   border-top-right-radius: 75px;
   transition: all 1s;
-  overflow: hidden;
 }
 
 .e-block--league:last-of-type {
@@ -72,13 +71,33 @@
     min-width: 350px;
     max-width: 100%;
   }
+  .e-block--league.solo {
+    position: relative;
+    transition: all .5s ease;
+  }
+  .e-block--league.solo .solo-sync {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+    white-space:nowrap;
+    height: unset;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    margin-left: 0;
+  }
+  .e-block--league.solo:hover .solo-sync {
+    visibility: visible;
+    opacity: 1;
+  }
   .e-block--league.solo:after {
     content: "";
     position: absolute;
     width: 380px;
     height: 460px;
     bottom: 0;
-    right: -60px;
+    right: 0;
     background: url("../../images/bristleabck_cutted.png") no-repeat right
       center;
     background-size: contain;
@@ -161,7 +180,7 @@
     width: 380px;
     height: 460px;
     bottom: 0;
-    right: -20px;
+    right: 0;
     /* background: url("../../images/bristleabck_cutted.png") no-repeat right */
     /* center; */
     /* background-size: contain; */
