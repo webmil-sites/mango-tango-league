@@ -10,6 +10,17 @@
   /* ttf Safari, Android, iOS */
 }
 @font-face {
+  font-family: "Akrobat-Light";
+  src: url("../fonts/Akrobat/WEB/Akrobat-Light.eot");
+  src: url("../fonts/Akrobat/WEB/Akrobat-Light.woff2") format("woff2"),
+    url("../fonts/Akrobat/WEB/Akrobat-Light.woff") format("woff"),
+    url("../fonts/Akrobat/TTF/Akrobat-Light.ttf") format("truetype");
+  /* eot IE9 Compat Modes */
+  /* woff2 Super Modern Browsers */
+  /* woff Pretty Modern Browsers */
+  /* ttf Safari, Android, iOS */
+}
+@font-face {
   font-family: "Akrobat-Bold";
   src: url("../fonts/Akrobat/WEB/Akrobat-Bold.eot");
   src: url("../fonts/Akrobat/WEB/Akrobat-Bold.woff2") format("woff2"),
