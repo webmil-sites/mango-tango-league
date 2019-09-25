@@ -56,7 +56,6 @@
   background-position: 80px 30px;
   border-top-right-radius: 75px;
   transition: all 1s;
-  overflow: hidden;
 }
 
 .e-block--league:last-of-type {
@@ -72,13 +71,33 @@
     min-width: 350px;
     max-width: 100%;
   }
+  .e-block--league.solo {
+    position: relative;
+    transition: all .5s ease;
+  }
+  .e-block--league.solo .solo-sync {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s ease;
+    white-space:nowrap;
+    height: unset;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    margin-left: 0;
+  }
+  .e-block--league.solo:hover .solo-sync {
+    visibility: visible;
+    opacity: 1;
+  }
   .e-block--league.solo:after {
     content: "";
     position: absolute;
     width: 380px;
     height: 460px;
     bottom: 0;
-    right: -60px;
+    right: 0;
     background: url("../../images/bristleabck_cutted.png") no-repeat right
       center;
     background-size: contain;
@@ -161,7 +180,7 @@
     width: 380px;
     height: 460px;
     bottom: 0;
-    right: -20px;
+    right: 0;
     /* background: url("../../images/bristleabck_cutted.png") no-repeat right */
     /* center; */
     /* background-size: contain; */
@@ -212,7 +231,7 @@
   border: 2px solid #a1b6ff;
   background: #250e4a;
 }
-.s-two__our-discord {
+/* .s-two__our-discord {
   color: #ff7f7e;
   position: absolute;
   bottom: 150px;
@@ -228,6 +247,100 @@
   width: 40px;
   background-position-x: 0px;
   margin-right: 10px;
+} */
+
+/* discord section */
+
+section.discord {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discord-card {
+    width: 480px;
+}
+
+.discord-card__header {
+  background: #7289DA;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px 0 8px 22px;
+}
+
+.discord-card__main {
+  background: #250E4A;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 30px 10px 20px 10px;
+}
+
+.discord-card__main > a {
+  display: flex;
+  background: #331C59;
+  padding: 16px 20px;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: Akrobat-Light;
+}
+
+.discord-card__main > a:hover {
+  background: #442872;
+  color: #EFFF31;
+}
+
+.discord-card__main > a > div {
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  margin-right: 18px;
+}
+
+.discord-info {
+  margin-left: 60px;
+}
+
+.discord-info > h2 {
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Akrobat-Bold;
+  margin: 0 0 46px 0;
+}
+
+.discord-info > p {
+  font-size: 24px;
+  line-height: 150%;
+  font-family: Akrobat-Light;
+  margin: 0 0 46px 0;
+}
+
+.discord-info > .button-action {
+  margin: 0;
+  border-color: #A1B6FF;
+  color: #A1B6FF;
+  display: inline-flex;
+  align-items: center;
+}
+
+.discord-info > a > span {
+  margin-left: 8px;
+}
+
+@media (max-width: 1080px) {
+  section.discord {
+    flex-direction: column;
+  }
+
+  .discord-info {
+    margin-left: 0;
+    margin-top: 40px;
+  }
 }
 
 /* .s-three {
