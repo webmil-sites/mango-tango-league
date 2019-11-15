@@ -20,6 +20,7 @@ body {
   background-attachment: fixed;
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: 126% auto;
 }
 @media screen and (max-width: 1130px) {
   body { background-size: 1130px auto; }
