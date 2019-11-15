@@ -21,6 +21,9 @@ body {
   background-position: center top;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 1440px) {
+  body { background-size: 1820px auto; }
+}
 @media screen and (max-width: 1130px) {
   body { background-size: 1130px auto; }
 }
